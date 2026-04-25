@@ -1,0 +1,6 @@
+com\clinic\ms01\rbac\Role.class
+com\clinic\ms01\auth\AuthController.class
+com\clinic\ms01\rbac\Permission.class
+com\clinic\ms01\security\SecurityConfig.class
+com\clinic\ms01\Ms01IdentityAccessApplication.class
+com\clinic\ms01\rbac\RolePermissionController.class
