@@ -1,0 +1,13 @@
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\bin\Debug\net10.0\SmartHealthcareSystem.Domain.deps.json
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\bin\Debug\net10.0\SmartHealthcareSystem.Domain.dll
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\bin\Debug\net10.0\SmartHealthcareSystem.Domain.pdb
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\SmartHealthcareSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\SmartHealthcareSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\SmartHealthcareSystem.Domain.AssemblyInfo.cs
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\SmartHealthcareSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\SmartHealthcareSystem.Domain.sourcelink.json
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\SmartHealthcareSystem.Domain.dll
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\refint\SmartHealthcareSystem.Domain.dll
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\SmartHealthcareSystem.Domain.pdb
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\ref\SmartHealthcareSystem.Domain.dll
+C:\Users\i - seven\Downloads\Smart-Healthcare-System-Booking-System--main\Smart-Healthcare-System-Booking-System--main\SmartHealthcareSystem.Domain\obj\Debug\net10.0\SmartHealthcareSystem.Domain.csproj.AssemblyReference.cache
