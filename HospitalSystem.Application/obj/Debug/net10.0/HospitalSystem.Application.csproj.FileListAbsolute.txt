@@ -1,0 +1,15 @@
+G:\New folder\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.deps.json
+G:\New folder\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.dll
+G:\New folder\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.pdb
+G:\New folder\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Domain.dll
+G:\New folder\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.csproj.AssemblyReference.cache
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.AssemblyInfoInputs.cache
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.AssemblyInfo.cs
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.csproj.CoreCompileInputs.cache
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\Hospital.CA47ADE6.Up2Date
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.dll
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\refint\HospitalSystem.Application.dll
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.pdb
+G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\ref\HospitalSystem.Application.dll

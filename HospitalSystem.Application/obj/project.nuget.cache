@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "FFnGAimxPUk=",
+  "success": true,
+  "projectFilePath": "g:\\New folder\\HospitalSystem.Application\\HospitalSystem.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hazem\\AppData\\Local\\Temp\\cursor-sandbox-cache\\76b4e4c5cf7b2525bc01a685630bf74a\\nuget\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\hazem\\AppData\\Local\\Temp\\cursor-sandbox-cache\\76b4e4c5cf7b2525bc01a685630bf74a\\nuget\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
+    "C:\\Users\\hazem\\AppData\\Local\\Temp\\cursor-sandbox-cache\\76b4e4c5cf7b2525bc01a685630bf74a\\nuget\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\hazem\\AppData\\Local\\Temp\\cursor-sandbox-cache\\76b4e4c5cf7b2525bc01a685630bf74a\\nuget\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

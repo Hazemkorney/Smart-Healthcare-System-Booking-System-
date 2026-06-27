@@ -1,0 +1,17 @@
+G:\New folder\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.deps.json
+G:\New folder\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.dll
+G:\New folder\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+G:\New folder\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Application.dll
+G:\New folder\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Domain.dll
+G:\New folder\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Application.pdb
+G:\New folder\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.csproj.AssemblyReference.cache
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.AssemblyInfoInputs.cache
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.AssemblyInfo.cs
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.csproj.CoreCompileInputs.cache
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\Hospital.2D89DDD6.Up2Date
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.dll
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\refint\HospitalSystem.Infrastructure.dll
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\ref\HospitalSystem.Infrastructure.dll
