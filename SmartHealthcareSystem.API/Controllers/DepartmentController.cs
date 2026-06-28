@@ -20,20 +20,20 @@ namespace SmartHealthcareSystem.API.Controller
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var departments =await _Service.GetAllDepartments();
+            var departments = await _Service.GetAllDepartments();
             return Ok(departments);
 
         }
 
         // GET api/<DepartmentController>/5
-        [HttpGet("{id}")]
+        [HttpGet("id/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var department =  await _Service.GetById(id);
+            var department = await _Service.GetById(id);
             return Ok(department);
         }
 
-        [HttpGet("{name}")]
+        [HttpGet("name/{name}")]
         public async Task<IActionResult> GetByName(string name)
         {
             var department = await _Service.GetByName(name);
@@ -44,7 +44,7 @@ namespace SmartHealthcareSystem.API.Controller
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CreateDepartmentDto name)
         {
-          var dep=  await _Service.Create(name);
+            var dep = await _Service.Create(name);
             return Ok(dep);
         }
 
@@ -61,7 +61,7 @@ namespace SmartHealthcareSystem.API.Controller
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-           var department =  await _Service.Delete(id);
+            var department = await _Service.Delete(id);
             return NoContent();
         }
     }
