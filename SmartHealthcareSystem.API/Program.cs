@@ -10,13 +10,13 @@ using SmartHealthcareSystem.Application.Services.Department;
 using SmartHealthcareSystem.Domain.Entities;
 using SmartHealthcareSystem.Infrastructure.Data;
 using SmartHealthcareSystem.Infrastructure.Repository;
-using System.Reflection.Metadata;
-using System.Runtime.InteropServices;
 using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<IDepartmentRepo, DepartmentRepo>();
 
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -54,7 +54,7 @@ builder.Services.AddSwaggerGen(options =>
         Description = "JWT Authorization header using the Bearer scheme."
     });
 
-    options.AddSecurityRequirement(document=>new OpenApiSecurityRequirement
+    options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
     {
         [
             new OpenApiSecuritySchemeReference("bearer", document)
@@ -73,13 +73,14 @@ builder.Services.AddOpenApi();
 builder.Services.AddScoped<IDepartmentRepo, DepartmentRepo>();
 var app = builder.Build();
 app.UseMiddleware<GlobalExceptionMiddelware>();
-using (var  scope = app.Services.CreateScope())
+using (var scope = app.Services.CreateScope())
 {
     var RoleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
     string[] roles = { "Receptionist", "Admin", "Doctor" };
     foreach (var role in roles)
     {
-        if (!await RoleManager.RoleExistsAsync(role)) {
+        if (!await RoleManager.RoleExistsAsync(role))
+        {
             await RoleManager.CreateAsync(new IdentityRole(role));
         }
     }
