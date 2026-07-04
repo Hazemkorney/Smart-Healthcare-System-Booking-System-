@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "9hmvhxjppJc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\HospitalSystem.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\i - seven\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\i - seven\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
+    "C:\\Users\\i - seven\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\i - seven\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
