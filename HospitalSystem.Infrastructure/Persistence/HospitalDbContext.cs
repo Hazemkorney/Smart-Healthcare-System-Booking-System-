@@ -11,6 +11,9 @@ public class HospitalDbContext : DbContext
     public DbSet<Department> Departments => Set<Department>();
     public DbSet<Doctor> Doctors => Set<Doctor>();
     public DbSet<DoctorSchedule> DoctorSchedules => Set<DoctorSchedule>();
+    public DbSet<DefaultDoctorSchedule> DefaultDoctorSchedules => Set<DefaultDoctorSchedule>();
+    public DbSet<DoctorDateSchedule> DoctorDateSchedules => Set<DoctorDateSchedule>();
+    public DbSet<DefaultDoctorDateSchedule> DefaultDoctorDateSchedules => Set<DefaultDoctorDateSchedule>();
     public DbSet<Patient> Patients => Set<Patient>();
     public DbSet<Appointment> Appointments => Set<Appointment>();
     public DbSet<Consultation> Consultations => Set<Consultation>();

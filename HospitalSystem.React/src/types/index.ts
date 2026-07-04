@@ -63,7 +63,16 @@ export interface Doctor {
 
 export interface DoctorSchedule {
   id: string;
-  dayOfWeek: number;
+  dayOfWeek: number | string;
+  startTime: string;
+  endTime: string;
+  appointmentDurationMinutes: number;
+  isActive: boolean;
+}
+
+export interface DoctorDateSchedule {
+  id: string;
+  date: string;
   startTime: string;
   endTime: string;
   appointmentDurationMinutes: number;
@@ -134,6 +143,16 @@ export interface DoctorAppointmentDetail {
   appointment: Appointment;
   patient: Patient;
   consultation?: Consultation | null;
+}
+
+export interface PatientMedicalHistoryEntry {
+  appointmentId: string;
+  appointmentDate: string;
+  startTime: string;
+  doctorName: string;
+  diagnosis?: string;
+  notes?: string;
+  prescriptions: Prescription[];
 }
 
 export interface Receptionist {

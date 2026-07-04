@@ -11,6 +11,7 @@ import { PatientLayout } from './layouts/PatientLayout';
 import { DepartmentsPage } from './pages/admin/DepartmentsPage';
 import { DoctorsPage } from './pages/admin/DoctorsPage';
 import { DoctorSchedulePage as AdminDoctorSchedulePage } from './pages/admin/DoctorSchedulePage';
+import { GlobalDoctorSchedulePage } from './pages/admin/GlobalDoctorSchedulePage';
 import { ReceptionistsPage } from './pages/admin/ReceptionistsPage';
 import { PatientsListPage } from './pages/receptionist/PatientsListPage';
 import { RegisterPatientPage } from './pages/receptionist/RegisterPatientPage';
@@ -19,7 +20,9 @@ import { BookAppointmentPage } from './pages/receptionist/BookAppointmentPage';
 import { ReceptionistSchedulePage } from './pages/receptionist/ReceptionistSchedulePage';
 import { AppointmentDetailPage } from './pages/receptionist/AppointmentDetailPage';
 import { DoctorSchedulePage } from './pages/doctor/DoctorSchedulePage';
+import { DoctorWorkingHoursPage } from './pages/doctor/DoctorWorkingHoursPage';
 import { ConsultationPage } from './pages/doctor/ConsultationPage';
+import { PatientMedicalHistoryPage } from './pages/patient/PatientMedicalHistoryPage';
 import { PatientProfilePage } from './pages/patient/PatientProfilePage';
 import { PatientAppointmentsPage } from './pages/patient/PatientAppointmentsPage';
 import { PatientAppointmentDetailPage } from './pages/patient/PatientAppointmentDetailPage';
@@ -49,6 +52,7 @@ export default function App() {
                 <Route index element={<Navigate to="departments" replace />} />
                 <Route path="departments" element={<DepartmentsPage />} />
                 <Route path="doctors" element={<DoctorsPage />} />
+                <Route path="doctor-schedule" element={<GlobalDoctorSchedulePage />} />
                 <Route path="doctors/:id/schedule" element={<AdminDoctorSchedulePage />} />
                 <Route path="receptionists" element={<ReceptionistsPage />} />
               </Route>
@@ -70,13 +74,15 @@ export default function App() {
               <Route path="/doctor" element={<DoctorLayout />}>
                 <Route index element={<Navigate to="schedule" replace />} />
                 <Route path="schedule" element={<DoctorSchedulePage />} />
+                <Route path="working-hours" element={<DoctorWorkingHoursPage />} />
                 <Route path="appointments/:id" element={<ConsultationPage />} />
               </Route>
             </Route>
 
             <Route element={<PrivateRoute role="Patient" />}>
               <Route path="/patient" element={<PatientLayout />}>
-                <Route index element={<Navigate to="profile" replace />} />
+                <Route index element={<Navigate to="medical-history" replace />} />
+                <Route path="medical-history" element={<PatientMedicalHistoryPage />} />
                 <Route path="profile" element={<PatientProfilePage />} />
                 <Route path="appointments" element={<PatientAppointmentsPage />} />
                 <Route path="appointments/:id" element={<PatientAppointmentDetailPage />} />

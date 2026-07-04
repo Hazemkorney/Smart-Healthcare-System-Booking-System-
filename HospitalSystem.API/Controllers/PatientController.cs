@@ -1,6 +1,8 @@
 using HospitalSystem.Application.Common;
+using HospitalSystem.Application.DTOs.Consultations;
 using HospitalSystem.Application.DTOs.Appointments;
 using HospitalSystem.Application.DTOs.Patients;
+using HospitalSystem.Domain.Enums;
 using HospitalSystem.Application.Exceptions;
 using HospitalSystem.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -43,6 +45,15 @@ public class PatientController : ApiControllerBase
         return OkResponse(result);
     }
 
+    [HttpGet("medical-history")]
+    public async Task<ActionResult<ApiResponse<IReadOnlyList<PatientMedicalHistoryEntry>>>> GetMedicalHistory(
+        CancellationToken cancellationToken)
+    {
+        var patient = await _patientService.GetByUserIdAsync(GetUserId(), cancellationToken);
+        var result = await _consultationService.GetOwnMedicalHistoryAsync(patient.Id, cancellationToken);
+        return OkResponse(result);
+    }
+
     [HttpGet("appointments/{id:guid}")]
     public async Task<ActionResult<ApiResponse<AppointmentDetailResponse>>> GetAppointmentDetail(
         Guid id,
@@ -54,7 +65,10 @@ public class PatientController : ApiControllerBase
         if (appointment.PatientId != patient.Id)
             throw new ForbiddenException("You can only access your own appointments.");
 
-        var consultation = await _consultationService.GetByAppointmentIdAsync(id, cancellationToken);
+        ConsultationResponse? consultation = null;
+        if (appointment.Status == AppointmentStatus.Completed)
+            consultation = await _consultationService.GetByAppointmentIdAsync(id, cancellationToken);
+
         return OkResponse(new AppointmentDetailResponse(appointment, consultation));
     }
 }

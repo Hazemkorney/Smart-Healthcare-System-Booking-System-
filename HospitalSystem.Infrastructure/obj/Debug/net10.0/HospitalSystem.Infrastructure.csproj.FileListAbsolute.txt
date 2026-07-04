@@ -15,3 +15,39 @@ G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Inf
 G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\refint\HospitalSystem.Infrastructure.dll
 G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.pdb
 G:\New folder\HospitalSystem.Infrastructure\obj\Debug\net10.0\ref\HospitalSystem.Infrastructure.dll
+G:\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.deps.json
+G:\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.dll
+G:\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+G:\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Application.dll
+G:\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Domain.dll
+G:\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Application.pdb
+G:\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.csproj.AssemblyReference.cache
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.AssemblyInfoInputs.cache
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.AssemblyInfo.cs
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.csproj.CoreCompileInputs.cache
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.sourcelink.json
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\Hospital.2D89DDD6.Up2Date
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.dll
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\refint\HospitalSystem.Infrastructure.dll
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+G:\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\ref\HospitalSystem.Infrastructure.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.deps.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Application.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Domain.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Application.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.sourcelink.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\Hospital.2D89DDD6.Up2Date
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\refint\HospitalSystem.Infrastructure.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Infrastructure\obj\Debug\net10.0\ref\HospitalSystem.Infrastructure.dll

@@ -42,6 +42,27 @@ public class AppointmentRepository : GenericRepository<Appointment>, IAppointmen
         return !await query.AnyAsync(cancellationToken);
     }
 
+    public async Task<bool> IsPatientSlotAvailableAsync(
+        Guid patientId,
+        DateOnly date,
+        TimeSpan startTime,
+        TimeSpan endTime,
+        Guid? excludeAppointmentId = null,
+        CancellationToken cancellationToken = default)
+    {
+        var query = DbSet.Where(a =>
+            a.PatientId == patientId &&
+            a.AppointmentDate == date &&
+            a.Status != AppointmentStatus.Cancelled &&
+            a.StartTime < endTime &&
+            a.EndTime > startTime);
+
+        if (excludeAppointmentId.HasValue)
+            query = query.Where(a => a.Id != excludeAppointmentId.Value);
+
+        return !await query.AnyAsync(cancellationToken);
+    }
+
     public async Task<IReadOnlyList<Appointment>> GetByPatientIdAsync(
         Guid patientId,
         CancellationToken cancellationToken = default)

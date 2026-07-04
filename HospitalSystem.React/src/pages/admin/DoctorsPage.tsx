@@ -12,17 +12,26 @@ import { Modal } from '../../components/Modal';
 import { ConfirmDialog } from '../../components/ConfirmDialog';
 import { useApiMutation } from '../../hooks/useApiMutation';
 import type { Doctor } from '../../types';
+import { optionalPhoneNumberSchema } from '../../utils/validation';
 
-const schema = z.object({
-  email: z.string().email(),
+const createSchema = z.object({
+  email: z.string().email('Valid email required'),
   password: z.string().min(6).optional().or(z.literal('')),
-  fullName: z.string().min(1),
-  specialization: z.string().min(1),
-  departmentId: z.string().min(1),
-  phone: z.string().optional(),
+  fullName: z.string().min(1, 'Full name required'),
+  specialization: z.string().min(1, 'Specialization required'),
+  departmentId: z.string().min(1, 'Department required'),
+  phone: optionalPhoneNumberSchema,
 });
 
-type FormData = z.infer<typeof schema>;
+const editSchema = z.object({
+  fullName: z.string().min(1, 'Full name required'),
+  specialization: z.string().min(1, 'Specialization required'),
+  departmentId: z.string().min(1, 'Department required'),
+  phone: optionalPhoneNumberSchema,
+});
+
+type CreateFormData = z.infer<typeof createSchema>;
+type EditFormData = z.infer<typeof editSchema>;
 
 export function DoctorsPage() {
   const [page, setPage] = useState(1);
@@ -40,7 +49,10 @@ export function DoctorsPage() {
     queryFn: departmentApi.getAllItems,
   });
 
-  const form = useForm<FormData>({ resolver: zodResolver(schema) });
+  const form = useForm<CreateFormData | EditFormData>({
+    resolver: async (values, context, options) =>
+      zodResolver(editing ? editSchema : createSchema)(values, context, options),
+  });
 
   const createMutation = useApiMutation({
     mutationFn: doctorApi.create,
@@ -72,8 +84,6 @@ export function DoctorsPage() {
   const openEdit = (doc: Doctor) => {
     setEditing(doc);
     form.reset({
-      email: '',
-      password: '',
       fullName: doc.fullName,
       specialization: doc.specialization,
       departmentId: doc.departmentId,
@@ -102,7 +112,7 @@ export function DoctorsPage() {
     [],
   );
 
-  const onSubmit = (values: FormData) => {
+  const onSubmit = (values: CreateFormData | EditFormData) => {
     if (editing) {
       updateMutation.mutate({
         id: editing.id,
@@ -114,7 +124,8 @@ export function DoctorsPage() {
         },
       });
     } else {
-      createMutation.mutate({ ...values, password: values.password || 'Doctor@123' });
+      const data = values as CreateFormData;
+      createMutation.mutate({ ...data, password: data.password || 'Doctor@123' });
     }
   };
 
@@ -168,7 +179,8 @@ export function DoctorsPage() {
           </div>
           <div>
             <label className="mb-1 block text-sm font-medium">Phone</label>
-            <input {...form.register('phone')} className="w-full rounded-lg border px-3 py-2 text-sm" />
+            <input {...form.register('phone')} type="tel" placeholder="01xxxxxxxxx" className="w-full rounded-lg border px-3 py-2 text-sm" />
+            {form.formState.errors.phone && <p className="mt-1 text-xs text-red-600">{form.formState.errors.phone.message}</p>}
           </div>
           <div className="col-span-2 flex justify-end gap-3">
             <button type="button" onClick={() => setModalOpen(false)} className="rounded-lg border px-4 py-2 text-sm">Cancel</button>

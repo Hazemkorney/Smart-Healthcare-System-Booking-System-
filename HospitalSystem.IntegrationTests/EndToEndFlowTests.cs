@@ -1,5 +1,9 @@
 using System.Net.Http.Json;
 using System.Text.Json;
+using HospitalSystem.Domain.Entities;
+using HospitalSystem.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace HospitalSystem.IntegrationTests;
 
@@ -29,7 +33,10 @@ public class EndToEndFlowTests(HospitalApiFactory factory) : IntegrationTestBase
             dateOfBirth = "1995-03-15",
             gender = "Male",
             phone = "555-9999",
-            email = "e2e@test.com"
+            email = "e2e@test.com",
+            address = "123 Test Street",
+            nationalId = "12345678901234",
+            bloodType = "O+"
         });
         patientResponse.EnsureSuccessStatusCode();
         var patientJson = await patientResponse.Content.ReadFromJsonAsync<JsonElement>();
@@ -56,6 +63,8 @@ public class EndToEndFlowTests(HospitalApiFactory factory) : IntegrationTestBase
         // 3. Check-in
         var checkInResponse = await Client.PutAsync($"/api/appointments/{appointmentId}/checkin", null);
         checkInResponse.EnsureSuccessStatusCode();
+
+        await SetAppointmentStartToNowAsync(appointmentId);
 
         // 4. Doctor consultation workflow
         var doctorToken = await LoginAsync("dr.smith@hospital.com", "Doctor@123");
@@ -89,5 +98,18 @@ public class EndToEndFlowTests(HospitalApiFactory factory) : IntegrationTestBase
 
         var historyResponse = await Client.GetAsync("/api/patient/appointments");
         historyResponse.EnsureSuccessStatusCode();
+    }
+
+    private async Task SetAppointmentStartToNowAsync(Guid appointmentId)
+    {
+        using var scope = Factory.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<HospitalDbContext>();
+        var appointment = await db.Appointments.FindAsync(appointmentId)
+            ?? throw new InvalidOperationException("Appointment not found for test setup.");
+
+        db.Entry(appointment).Property(nameof(Appointment.AppointmentDate)).CurrentValue = DateOnly.FromDateTime(DateTime.UtcNow);
+        db.Entry(appointment).Property(nameof(Appointment.StartTime)).CurrentValue =
+            DateTime.UtcNow.TimeOfDay.Subtract(TimeSpan.FromMinutes(1));
+        await db.SaveChangesAsync();
     }
 }

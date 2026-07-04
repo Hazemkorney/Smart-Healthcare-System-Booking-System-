@@ -8,6 +8,9 @@ public interface IUnitOfWork
     IRepository<Department> Departments { get; }
     IDoctorRepository Doctors { get; }
     IRepository<DoctorSchedule> DoctorSchedules { get; }
+    IRepository<DefaultDoctorSchedule> DefaultDoctorSchedules { get; }
+    IRepository<DoctorDateSchedule> DoctorDateSchedules { get; }
+    IRepository<DefaultDoctorDateSchedule> DefaultDoctorDateSchedules { get; }
     IRepository<Patient> Patients { get; }
     IAppointmentRepository Appointments { get; }
     IRepository<Consultation> Consultations { get; }

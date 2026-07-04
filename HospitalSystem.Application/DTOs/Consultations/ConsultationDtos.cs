@@ -29,3 +29,12 @@ public record ConsultationResponse(
     DateTime StartedAt,
     DateTime? CompletedAt,
     IReadOnlyList<PrescriptionResponse> Prescriptions);
+
+public record PatientMedicalHistoryEntry(
+    Guid AppointmentId,
+    DateOnly AppointmentDate,
+    TimeSpan StartTime,
+    string DoctorName,
+    string? Diagnosis,
+    string? Notes,
+    IReadOnlyList<PrescriptionResponse> Prescriptions);

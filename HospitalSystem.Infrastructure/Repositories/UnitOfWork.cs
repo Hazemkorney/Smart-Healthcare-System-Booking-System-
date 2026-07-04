@@ -15,6 +15,9 @@ public class UnitOfWork : IUnitOfWork
         Departments = new GenericRepository<Department>(context);
         Doctors = new DoctorRepository(context);
         DoctorSchedules = new GenericRepository<DoctorSchedule>(context);
+        DefaultDoctorSchedules = new GenericRepository<DefaultDoctorSchedule>(context);
+        DoctorDateSchedules = new GenericRepository<DoctorDateSchedule>(context);
+        DefaultDoctorDateSchedules = new GenericRepository<DefaultDoctorDateSchedule>(context);
         Patients = new GenericRepository<Patient>(context);
         Appointments = new AppointmentRepository(context);
         Consultations = new GenericRepository<Consultation>(context);
@@ -26,6 +29,9 @@ public class UnitOfWork : IUnitOfWork
     public IRepository<Department> Departments { get; }
     public IDoctorRepository Doctors { get; }
     public IRepository<DoctorSchedule> DoctorSchedules { get; }
+    public IRepository<DefaultDoctorSchedule> DefaultDoctorSchedules { get; }
+    public IRepository<DoctorDateSchedule> DoctorDateSchedules { get; }
+    public IRepository<DefaultDoctorDateSchedule> DefaultDoctorDateSchedules { get; }
     public IRepository<Patient> Patients { get; }
     public IAppointmentRepository Appointments { get; }
     public IRepository<Consultation> Consultations { get; }

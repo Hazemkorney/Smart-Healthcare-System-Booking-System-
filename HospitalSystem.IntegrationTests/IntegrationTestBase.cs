@@ -1,6 +1,7 @@
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
+using HospitalSystem.Domain.Entities;
 using HospitalSystem.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
@@ -53,6 +54,29 @@ public abstract class IntegrationTestBase : IClassFixture<HospitalApiFactory>, I
         var doctor = db.Doctors.First(d => d.FullName == "Dr. John Smith");
 
         return (patient.Id, doctor.Id);
+    }
+
+    protected async Task<Guid> GetSecondDoctorIdAsync()
+    {
+        using var scope = Factory.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<HospitalDbContext>();
+        return db.Doctors.First(d => d.FullName == "Dr. Sarah Jones").Id;
+    }
+
+    protected async Task EnsureDoctorDateScheduleAsync(Guid doctorId, DateOnly date)
+    {
+        using var scope = Factory.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<HospitalDbContext>();
+        if (db.DoctorDateSchedules.Any(s => s.DoctorId == doctorId && s.ScheduleDate == date))
+            return;
+
+        db.DoctorDateSchedules.Add(DoctorDateSchedule.Create(
+            doctorId,
+            date,
+            new TimeSpan(9, 0, 0),
+            new TimeSpan(17, 0, 0),
+            30));
+        await db.SaveChangesAsync();
     }
 
     protected static DateOnly NextWeekday()

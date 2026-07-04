@@ -33,7 +33,7 @@ public class AppointmentService : IAppointmentService
         var patient = await _unitOfWork.Patients.GetByIdAsync(request.PatientId, cancellationToken)
             ?? throw new NotFoundException("Patient not found.");
 
-        var schedule = await GetDoctorScheduleForDayAsync(request.DoctorId, request.AppointmentDate, cancellationToken);
+        var schedule = await GetWorkingHoursForDateAsync(request.DoctorId, request.AppointmentDate, cancellationToken);
         ValidateWithinWorkingHours(request.StartTime, schedule);
 
         var endTime = request.StartTime.Add(TimeSpan.FromMinutes(schedule.AppointmentDurationMinutes));
@@ -47,6 +47,14 @@ public class AppointmentService : IAppointmentService
 
         if (!isAvailable)
             throw new ValidationException("Slot not available.");
+
+        var patientAvailable = await _unitOfWork.Appointments.IsPatientSlotAvailableAsync(
+            request.PatientId, request.AppointmentDate, request.StartTime, endTime,
+            cancellationToken: cancellationToken);
+
+        if (!patientAvailable)
+            throw new ValidationException(
+                "Patient already has another appointment at this time, including with a different doctor.");
 
         var appointment = Appointment.Create(
             request.PatientId,
@@ -81,7 +89,7 @@ public class AppointmentService : IAppointmentService
 
         ValidateNotInPast(request.NewDate, request.NewStartTime);
 
-        var schedule = await GetDoctorScheduleForDayAsync(appointment.DoctorId, request.NewDate, cancellationToken);
+        var schedule = await GetWorkingHoursForDateAsync(appointment.DoctorId, request.NewDate, cancellationToken);
         ValidateWithinWorkingHours(request.NewStartTime, schedule);
 
         var newEndTime = request.NewStartTime.Add(TimeSpan.FromMinutes(schedule.AppointmentDurationMinutes));
@@ -95,6 +103,14 @@ public class AppointmentService : IAppointmentService
 
         if (!isAvailable)
             throw new ValidationException("Slot not available.");
+
+        var patientAvailable = await _unitOfWork.Appointments.IsPatientSlotAvailableAsync(
+            appointment.PatientId, request.NewDate, request.NewStartTime, newEndTime,
+            appointmentId, cancellationToken);
+
+        if (!patientAvailable)
+            throw new ValidationException(
+                "Patient already has another appointment at this time, including with a different doctor.");
 
         appointment.Reschedule(request.NewDate, request.NewStartTime, newEndTime);
         await _unitOfWork.Appointments.UpdateAsync(appointment, cancellationToken);
@@ -144,10 +160,24 @@ public class AppointmentService : IAppointmentService
     public async Task<IReadOnlyList<AvailableSlotResponse>> GetAvailableSlotsAsync(
         Guid doctorId,
         DateOnly date,
+        Guid patientId,
+        Guid? excludeAppointmentId = null,
         CancellationToken cancellationToken = default)
     {
-        var schedule = await GetDoctorScheduleForDayAsync(doctorId, date, cancellationToken);
+        if (patientId == Guid.Empty)
+            throw new ValidationException("Patient is required to check available slots.");
+
+        var schedule = await GetWorkingHoursForDateAsync(doctorId, date, cancellationToken);
         var booked = await _unitOfWork.Appointments.GetByDoctorAndDateAsync(doctorId, date, cancellationToken);
+
+        if (excludeAppointmentId.HasValue)
+            booked = booked.Where(a => a.Id != excludeAppointmentId.Value).ToList();
+
+        var patientAppointments = await _unitOfWork.Appointments.GetByPatientIdAsync(patientId, cancellationToken);
+        var patientBooked = patientAppointments
+            .Where(a => a.AppointmentDate == date)
+            .Where(a => !excludeAppointmentId.HasValue || a.Id != excludeAppointmentId.Value)
+            .ToArray();
 
         var slots = new List<AvailableSlotResponse>();
         var slotDuration = TimeSpan.FromMinutes(schedule.AppointmentDurationMinutes);
@@ -156,11 +186,14 @@ public class AppointmentService : IAppointmentService
         while (current.Add(slotDuration) <= schedule.EndTime)
         {
             var end = current.Add(slotDuration);
-            var overlaps = booked.Any(a =>
+            var doctorOverlaps = booked.Any(a =>
+                a.Status != AppointmentStatus.Cancelled &&
+                current < a.EndTime && end > a.StartTime);
+            var patientOverlaps = patientBooked.Any(a =>
                 a.Status != AppointmentStatus.Cancelled &&
                 current < a.EndTime && end > a.StartTime);
 
-            if (!overlaps)
+            if (!doctorOverlaps && !patientOverlaps)
                 slots.Add(new AvailableSlotResponse(current, end));
 
             current = current.Add(slotDuration);
@@ -208,17 +241,26 @@ public class AppointmentService : IAppointmentService
         return results;
     }
 
-    private async Task<DoctorSchedule> GetDoctorScheduleForDayAsync(
+    private sealed record DayWorkingHours(TimeSpan StartTime, TimeSpan EndTime, int AppointmentDurationMinutes);
+
+    private async Task<DayWorkingHours> GetWorkingHoursForDateAsync(
         Guid doctorId,
         DateOnly date,
         CancellationToken cancellationToken)
     {
-        var dayOfWeek = date.DayOfWeek;
-        var allSchedules = await _unitOfWork.DoctorSchedules.GetAllAsync(cancellationToken);
-        var schedule = allSchedules.FirstOrDefault(s =>
-            s.DoctorId == doctorId && s.DayOfWeek == dayOfWeek && s.IsActive);
+        var dateSchedules = await _unitOfWork.DoctorDateSchedules.GetAllAsync(cancellationToken);
+        var dateSchedule = dateSchedules.FirstOrDefault(s =>
+            s.DoctorId == doctorId && s.ScheduleDate == date && s.IsActive);
 
-        return schedule ?? throw new ValidationException("Doctor is not available on this day.");
+        if (dateSchedule is not null)
+        {
+            return new DayWorkingHours(
+                dateSchedule.StartTime,
+                dateSchedule.EndTime,
+                dateSchedule.AppointmentDurationMinutes);
+        }
+
+        throw new ValidationException("Doctor is not available on this date. Set working hours for this date first.");
     }
 
     private static void ValidateNotInPast(DateOnly date, TimeSpan startTime)
@@ -235,7 +277,7 @@ public class AppointmentService : IAppointmentService
         }
     }
 
-    private static void ValidateWithinWorkingHours(TimeSpan startTime, DoctorSchedule schedule)
+    private static void ValidateWithinWorkingHours(TimeSpan startTime, DayWorkingHours schedule)
     {
         if (startTime < schedule.StartTime || startTime >= schedule.EndTime)
             throw new ValidationException("Start time is outside doctor's working hours.");

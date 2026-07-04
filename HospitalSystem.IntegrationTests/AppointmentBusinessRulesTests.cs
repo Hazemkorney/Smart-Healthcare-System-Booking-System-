@@ -100,6 +100,43 @@ public class AppointmentBusinessRulesTests(HospitalApiFactory factory) : Integra
     }
 
     [Fact]
+    public async Task PatientDoubleBookingDifferentDoctor_Returns400()
+    {
+        var token = await LoginAsync("reception@hospital.com", "Reception@123");
+        Authenticate(token);
+
+        var (patientId, doctorId) = await GetSeededIdsAsync();
+        var secondDoctorId = await GetSecondDoctorIdAsync();
+        var date = NextWeekday();
+        await EnsureDoctorDateScheduleAsync(doctorId, date);
+        await EnsureDoctorDateScheduleAsync(secondDoctorId, date);
+        const string slotTime = "10:00:00";
+
+        var first = await Client.PostAsJsonAsync("/api/appointments", new
+        {
+            patientId,
+            doctorId,
+            appointmentDate = date.ToString("yyyy-MM-dd"),
+            startTime = slotTime,
+            notes = (string?)null
+        });
+        first.EnsureSuccessStatusCode();
+
+        var second = await Client.PostAsJsonAsync("/api/appointments", new
+        {
+            patientId,
+            doctorId = secondDoctorId,
+            appointmentDate = date.ToString("yyyy-MM-dd"),
+            startTime = slotTime,
+            notes = (string?)null
+        });
+
+        Assert.Equal(HttpStatusCode.BadRequest, second.StatusCode);
+        var message = await ReadErrorMessageAsync(second);
+        Assert.Contains("Patient already has another appointment at this time", message, StringComparison.OrdinalIgnoreCase);
+    }
+
+    [Fact]
     public async Task CancelledAppointmentSlot_AppearsInAvailableSlots()
     {
         var token = await LoginAsync("reception@hospital.com", "Reception@123");
@@ -107,6 +144,7 @@ public class AppointmentBusinessRulesTests(HospitalApiFactory factory) : Integra
 
         var (patientId, doctorId) = await GetSeededIdsAsync();
         var date = NextWeekday();
+        await EnsureDoctorDateScheduleAsync(doctorId, date);
         const string slotTime = "11:00:00";
 
         var bookResponse = await Client.PostAsJsonAsync("/api/appointments", new
@@ -122,13 +160,13 @@ public class AppointmentBusinessRulesTests(HospitalApiFactory factory) : Integra
         var booked = await bookResponse.Content.ReadFromJsonAsync<JsonElement>();
         var appointmentId = booked.GetProperty("data").GetProperty("id").GetGuid();
 
-        var slotsBeforeCancel = await GetSlotStartTimesAsync(doctorId, date);
+        var slotsBeforeCancel = await GetSlotStartTimesAsync(doctorId, date, patientId);
         Assert.DoesNotContain("11:00:00", slotsBeforeCancel);
 
         var cancelResponse = await Client.PutAsync($"/api/appointments/{appointmentId}/cancel", null);
         cancelResponse.EnsureSuccessStatusCode();
 
-        var slotsAfterCancel = await GetSlotStartTimesAsync(doctorId, date);
+        var slotsAfterCancel = await GetSlotStartTimesAsync(doctorId, date, patientId);
         Assert.Contains("11:00:00", slotsAfterCancel);
     }
 
@@ -138,11 +176,12 @@ public class AppointmentBusinessRulesTests(HospitalApiFactory factory) : Integra
         var token = await LoginAsync("reception@hospital.com", "Reception@123");
         Authenticate(token);
 
-        var (_, doctorId) = await GetSeededIdsAsync();
+        var (patientId, doctorId) = await GetSeededIdsAsync();
         var date = NextWeekday();
+        await EnsureDoctorDateScheduleAsync(doctorId, date);
 
         var response = await Client.GetAsync(
-            $"/api/appointments/available-slots?doctorId={doctorId}&date={date:yyyy-MM-dd}");
+            $"/api/appointments/available-slots?doctorId={doctorId}&date={date:yyyy-MM-dd}&patientId={patientId}");
         response.EnsureSuccessStatusCode();
 
         var json = await response.Content.ReadFromJsonAsync<JsonElement>();
@@ -166,10 +205,10 @@ public class AppointmentBusinessRulesTests(HospitalApiFactory factory) : Integra
         Assert.Equal(new TimeSpan(17, 0, 0), lastEnd);
     }
 
-    private async Task<List<string>> GetSlotStartTimesAsync(Guid doctorId, DateOnly date)
+    private async Task<List<string>> GetSlotStartTimesAsync(Guid doctorId, DateOnly date, Guid patientId)
     {
         var response = await Client.GetAsync(
-            $"/api/appointments/available-slots?doctorId={doctorId}&date={date:yyyy-MM-dd}");
+            $"/api/appointments/available-slots?doctorId={doctorId}&date={date:yyyy-MM-dd}&patientId={patientId}");
         response.EnsureSuccessStatusCode();
 
         var json = await response.Content.ReadFromJsonAsync<JsonElement>();

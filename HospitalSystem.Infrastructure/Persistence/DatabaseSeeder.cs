@@ -30,6 +30,7 @@ public class DatabaseSeeder
         {
             _logger.LogInformation("Database already seeded. Ensuring demo accounts exist.");
             await EnsurePatientLoginAsync(cancellationToken);
+            await EnsureDefaultDoctorScheduleAsync(cancellationToken);
             return;
         }
 
@@ -55,9 +56,19 @@ public class DatabaseSeeder
 
         var workDays = new[]
         {
-            DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday,
-            DayOfWeek.Thursday, DayOfWeek.Friday
+            DayOfWeek.Sunday, DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday,
+            DayOfWeek.Thursday, DayOfWeek.Friday, DayOfWeek.Saturday
         };
+
+        foreach (var day in workDays)
+        {
+            var defaultSchedule = DefaultDoctorSchedule.Create(
+                day,
+                new TimeSpan(9, 0, 0),
+                new TimeSpan(17, 0, 0),
+                30);
+            await _context.DefaultDoctorSchedules.AddAsync(defaultSchedule, cancellationToken);
+        }
 
         foreach (var doctor in new[] { doctor1, doctor2 })
         {
@@ -136,6 +147,31 @@ public class DatabaseSeeder
                 userId: patientUser.Id);
             await _context.Patients.AddAsync(profile, cancellationToken);
             _logger.LogInformation("Created Alice Johnson profile for demo patient user.");
+        }
+
+        await _context.SaveChangesAsync(cancellationToken);
+    }
+
+    private async Task EnsureDefaultDoctorScheduleAsync(CancellationToken cancellationToken)
+    {
+        if (await _context.DefaultDoctorSchedules.AnyAsync(cancellationToken))
+            return;
+
+        _logger.LogInformation("Seeding default doctor schedule.");
+        var workDays = new[]
+        {
+            DayOfWeek.Sunday, DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday,
+            DayOfWeek.Thursday, DayOfWeek.Friday, DayOfWeek.Saturday
+        };
+
+        foreach (var day in workDays)
+        {
+            var defaultSchedule = DefaultDoctorSchedule.Create(
+                day,
+                new TimeSpan(9, 0, 0),
+                new TimeSpan(17, 0, 0),
+                30);
+            await _context.DefaultDoctorSchedules.AddAsync(defaultSchedule, cancellationToken);
         }
 
         await _context.SaveChangesAsync(cancellationToken);

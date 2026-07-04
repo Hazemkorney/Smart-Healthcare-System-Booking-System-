@@ -1,6 +1,7 @@
 using HospitalSystem.Application.Common;
 using HospitalSystem.Application.DTOs.Appointments;
 using HospitalSystem.Application.DTOs.Consultations;
+using HospitalSystem.Application.DTOs.Doctors;
 using HospitalSystem.Application.DTOs.Patients;
 using HospitalSystem.Application.Exceptions;
 using HospitalSystem.Application.Interfaces;
@@ -37,6 +38,39 @@ public class DoctorController : ApiControllerBase
     {
         var doctor = await _doctorService.GetByUserIdAsync(GetUserId(), cancellationToken);
         var result = await _appointmentService.GetDoctorScheduleAsync(doctor.Id, date, cancellationToken);
+        return OkResponse(result);
+    }
+
+    [HttpGet("working-hours")]
+    public async Task<ActionResult<ApiResponse<DoctorDateScheduleResponse>>> GetWorkingHours(
+        [FromQuery] DateOnly date,
+        CancellationToken cancellationToken)
+    {
+        var doctor = await _doctorService.GetByUserIdAsync(GetUserId(), cancellationToken);
+        var result = await _doctorService.GetDateScheduleForDateAsync(doctor.Id, date, cancellationToken);
+        if (result is null)
+            throw new NotFoundException("No working hours configured for this date.");
+        return OkResponse(result);
+    }
+
+    [HttpGet("date-schedules")]
+    public async Task<ActionResult<ApiResponse<IReadOnlyList<DoctorDateScheduleResponse>>>> GetDateSchedules(
+        CancellationToken cancellationToken)
+    {
+        var doctor = await _doctorService.GetByUserIdAsync(GetUserId(), cancellationToken);
+        var result = await _doctorService.GetDateSchedulesAsync(doctor.Id, cancellationToken: cancellationToken);
+        return OkResponse(result);
+    }
+
+    [HttpGet("patients/{patientId:guid}/medical-history")]
+    public async Task<ActionResult<ApiResponse<IReadOnlyList<PatientMedicalHistoryEntry>>>> GetMedicalHistory(
+        Guid patientId,
+        [FromQuery] Guid? excludeAppointmentId,
+        CancellationToken cancellationToken)
+    {
+        var doctor = await _doctorService.GetByUserIdAsync(GetUserId(), cancellationToken);
+        var result = await _consultationService.GetPatientMedicalHistoryAsync(
+            doctor.Id, patientId, excludeAppointmentId, cancellationToken);
         return OkResponse(result);
     }
 

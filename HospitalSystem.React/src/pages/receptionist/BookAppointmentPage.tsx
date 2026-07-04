@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { departmentApi, doctorApi, appointmentApi, patientApi } from '../../api';
 import { useApiMutation } from '../../hooks/useApiMutation';
 import { formatTime } from '../../utils/format';
-
+import Select from 'react-select';
 export function BookAppointmentPage() {
   const [step, setStep] = useState(1);
   const [departmentId, setDepartmentId] = useState('');
@@ -21,9 +21,9 @@ export function BookAppointmentPage() {
   });
   const { data: patients = [] } = useQuery({ queryKey: ['patients', 'all'], queryFn: () => patientApi.searchAll() });
   const { data: slots = [], isLoading: slotsLoading } = useQuery({
-    queryKey: ['slots', doctorId, date],
-    queryFn: () => appointmentApi.getAvailableSlots(doctorId, date),
-    enabled: !!doctorId && !!date,
+    queryKey: ['slots', doctorId, date, patientId],
+    queryFn: () => appointmentApi.getAvailableSlots(doctorId, date, patientId),
+    enabled: !!doctorId && !!date && !!patientId,
   });
 
   const bookMutation = useApiMutation({
@@ -41,7 +41,10 @@ export function BookAppointmentPage() {
       setSelectedSlot('');
     },
   });
-
+  const patientOptions = patients.map((p) => ({
+    value: p.id,
+    label: `${p.fullName} - ${p.phone} - ${p.email}`,
+  }));
   return (
     <div className="max-w-3xl">
       <h2 className="mb-6 text-2xl font-bold">Book Appointment</h2>
@@ -55,7 +58,18 @@ export function BookAppointmentPage() {
 
       {step === 1 && (
         <div className="space-y-4 rounded-xl border bg-white p-6 shadow-sm">
-          <div><label className="text-sm font-medium">Patient</label><select value={patientId} onChange={(e) => setPatientId(e.target.value)} className="mt-1 w-full rounded-lg border px-3 py-2 text-sm"><option value="">Select patient...</option>{patients.map((p) => <option key={p.id} value={p.id}>{p.fullName}</option>)}</select></div>
+          <div>
+            <label className="text-sm font-medium">Patient</label>
+
+            <Select
+              className="mt-1"
+              options={patientOptions}
+              placeholder="Search by name, phone or email..."
+              isClearable
+              value={patientOptions.find((p) => p.value === patientId) || null}
+              onChange={(selected) => setPatientId(selected?.value || "")}
+            />
+          </div>
           <div><label className="text-sm font-medium">Department</label><select value={departmentId} onChange={(e) => { setDepartmentId(e.target.value); setDoctorId(''); }} className="mt-1 w-full rounded-lg border px-3 py-2 text-sm"><option value="">Select...</option>{departments.map((d) => <option key={d.id} value={d.id}>{d.name}</option>)}</select></div>
           <div><label className="text-sm font-medium">Doctor</label><select value={doctorId} onChange={(e) => setDoctorId(e.target.value)} className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" disabled={!departmentId}><option value="">Select...</option>{doctors.map((d) => <option key={d.id} value={d.id}>{d.fullName} — {d.specialization}</option>)}</select></div>
           <div><label className="text-sm font-medium">Date</label><input type="date" value={date} min={new Date().toISOString().slice(0, 10)} onChange={(e) => setDate(e.target.value)} className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" /></div>
@@ -65,7 +79,10 @@ export function BookAppointmentPage() {
 
       {step === 2 && (
         <div className="rounded-xl border bg-white p-6 shadow-sm">
-          <h3 className="mb-4 font-semibold">Available Time Slots</h3>
+          <h3 className="mb-1 font-semibold">Available Time Slots</h3>
+          <p className="mb-4 text-xs text-slate-500">
+            Times when this patient is already booked (with any doctor) are hidden.
+          </p>
           {slotsLoading ? <p className="text-sm text-slate-500">Loading slots...</p> : (
             <div className="grid grid-cols-3 gap-3 sm:grid-cols-4">
               {slots.map((slot) => {

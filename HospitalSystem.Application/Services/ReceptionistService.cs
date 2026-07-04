@@ -22,17 +22,37 @@ public class ReceptionistService : IReceptionistService
     public async Task<ReceptionistResponse> CreateAsync(CreateReceptionistRequest request, CancellationToken cancellationToken = default)
     {
         var users = await _unitOfWork.Users.GetAllAsync(cancellationToken);
-        if (users.Any(u => u.Email.Equals(request.Email, StringComparison.OrdinalIgnoreCase)))
-            throw new ValidationException("Email is already registered.");
+        var existingUser = users.FirstOrDefault(u =>
+            u.Email.Equals(request.Email, StringComparison.OrdinalIgnoreCase));
+
+        if (existingUser is not null)
+        {
+            if (existingUser.IsActive || existingUser.Role != UserRole.Receptionist)
+                throw new ValidationException("Email is already registered.");
+
+            var receptionists = await _unitOfWork.Receptionists.GetAllAsync(cancellationToken);
+            var receptionist = receptionists.FirstOrDefault(r => r.UserId == existingUser.Id)
+                ?? throw new ValidationException("Email is already registered.");
+
+            existingUser.Activate();
+            existingUser.UpdatePassword(_passwordHasher.Hash(request.Password));
+            receptionist.Activate();
+            receptionist.Update(request.FullName, request.Phone);
+
+            await _unitOfWork.Users.UpdateAsync(existingUser, cancellationToken);
+            await _unitOfWork.Receptionists.UpdateAsync(receptionist, cancellationToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+            return Map(receptionist);
+        }
 
         var user = User.Create(request.Email, _passwordHasher.Hash(request.Password), UserRole.Receptionist);
         await _unitOfWork.Users.AddAsync(user, cancellationToken);
 
-        var receptionist = Receptionist.Create(user.Id, request.FullName, request.Phone);
-        await _unitOfWork.Receptionists.AddAsync(receptionist, cancellationToken);
+        var newReceptionist = Receptionist.Create(user.Id, request.FullName, request.Phone);
+        await _unitOfWork.Receptionists.AddAsync(newReceptionist, cancellationToken);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return Map(receptionist);
+        return Map(newReceptionist);
     }
 
     public async Task<ReceptionistResponse> UpdateAsync(Guid id, UpdateReceptionistRequest request, CancellationToken cancellationToken = default)
@@ -53,6 +73,10 @@ public class ReceptionistService : IReceptionistService
 
         receptionist.Deactivate();
         await _unitOfWork.Receptionists.UpdateAsync(receptionist, cancellationToken);
+
+        var user = await _unitOfWork.Users.GetByIdAsync(receptionist.UserId, cancellationToken);
+        user?.Deactivate();
+
         await _unitOfWork.SaveChangesAsync(cancellationToken);
     }
 
@@ -68,7 +92,9 @@ public class ReceptionistService : IReceptionistService
         int pageSize = 10,
         CancellationToken cancellationToken = default)
     {
-        var receptionists = await _unitOfWork.Receptionists.GetAllAsync(cancellationToken);
+        var receptionists = (await _unitOfWork.Receptionists.GetAllAsync(cancellationToken))
+            .Where(r => r.IsActive)
+            .ToList();
         return Pagination.Create(receptionists.Select(Map), page, pageSize);
     }
 

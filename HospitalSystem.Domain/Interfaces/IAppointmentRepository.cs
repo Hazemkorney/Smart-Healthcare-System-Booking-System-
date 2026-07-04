@@ -17,6 +17,14 @@ public interface IAppointmentRepository : IRepository<Appointment>
         Guid? excludeAppointmentId = null,
         CancellationToken cancellationToken = default);
 
+    Task<bool> IsPatientSlotAvailableAsync(
+        Guid patientId,
+        DateOnly date,
+        TimeSpan startTime,
+        TimeSpan endTime,
+        Guid? excludeAppointmentId = null,
+        CancellationToken cancellationToken = default);
+
     Task<IReadOnlyList<Appointment>> GetByPatientIdAsync(
         Guid patientId,
         CancellationToken cancellationToken = default);

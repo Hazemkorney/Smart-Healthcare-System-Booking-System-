@@ -15,7 +15,7 @@ public class DoctorRepository : GenericRepository<Doctor>, IDoctorRepository
     {
         return await DbSet
             .Include(d => d.Department)
-            .Where(d => d.DepartmentId == departmentId)
+            .Where(d => d.DepartmentId == departmentId && d.IsActive)
             .ToListAsync(cancellationToken);
     }
 }

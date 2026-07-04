@@ -39,3 +39,19 @@ public record DoctorScheduleResponse(
     TimeSpan EndTime,
     int AppointmentDurationMinutes,
     bool IsActive);
+
+public record SetDoctorDateScheduleRequest(
+    DateOnly Date,
+    TimeSpan StartTime,
+    TimeSpan EndTime,
+    int AppointmentDurationMinutes);
+
+public record DoctorDateScheduleResponse(
+    Guid Id,
+    DateOnly Date,
+    TimeSpan StartTime,
+    TimeSpan EndTime,
+    int AppointmentDurationMinutes,
+    bool IsActive);
+
+public record ApplyDefaultDateSchedulesRequest(IReadOnlyList<DateOnly> Dates);

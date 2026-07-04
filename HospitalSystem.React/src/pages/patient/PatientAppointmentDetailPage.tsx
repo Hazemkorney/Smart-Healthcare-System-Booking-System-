@@ -16,6 +16,7 @@ export function PatientAppointmentDetailPage() {
   if (!data) return <p>Not found</p>;
 
   const { appointment, consultation } = data;
+  const isCompleted = appointment.status === 'Completed' || appointment.status === 3;
 
   return (
     <div className="max-w-2xl">
@@ -31,13 +32,19 @@ export function PatientAppointmentDetailPage() {
           <div className="flex justify-between"><dt className="text-slate-500">Time</dt><dd>{formatTime(appointment.startTime)}</dd></div>
         </dl>
       </div>
-      {consultation?.diagnosis && (
+      {!isCompleted && (
+        <p className="mb-6 rounded-lg bg-slate-50 px-4 py-3 text-sm text-slate-600">
+          Diagnosis and prescriptions will appear here after your doctor completes the consultation.
+        </p>
+      )}
+      {isCompleted && consultation?.diagnosis && (
         <div className="mb-6 rounded-xl border bg-white p-6 shadow-sm">
           <h3 className="mb-2 font-semibold">Diagnosis</h3>
           <p className="text-sm text-slate-700">{consultation.diagnosis}</p>
+          {consultation.notes && <p className="mt-2 text-sm text-slate-600">{consultation.notes}</p>}
         </div>
       )}
-      {consultation?.prescriptions && consultation.prescriptions.length > 0 && (
+      {isCompleted && consultation?.prescriptions && consultation.prescriptions.length > 0 && (
         <div className="rounded-xl border bg-white p-6 shadow-sm">
           <h3 className="mb-3 font-semibold">Prescriptions</h3>
           {consultation.prescriptions.map((p) => (

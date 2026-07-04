@@ -29,9 +29,12 @@ public class AppointmentsController : ApiControllerBase
     public async Task<ActionResult<ApiResponse<IReadOnlyList<AvailableSlotResponse>>>> GetAvailableSlots(
         [FromQuery] Guid doctorId,
         [FromQuery] DateOnly date,
+        [FromQuery] Guid patientId,
+        [FromQuery] Guid? excludeAppointmentId,
         CancellationToken cancellationToken)
     {
-        var result = await _appointmentService.GetAvailableSlotsAsync(doctorId, date, cancellationToken);
+        var result = await _appointmentService.GetAvailableSlotsAsync(
+            doctorId, date, patientId, excludeAppointmentId, cancellationToken);
         return OkResponse(result);
     }
 

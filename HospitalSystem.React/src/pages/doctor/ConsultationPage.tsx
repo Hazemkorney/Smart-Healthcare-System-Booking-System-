@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { doctorPortalApi } from '../../api';
 import { StatusBadge } from '../../components/StatusBadge';
 import { useApiMutation } from '../../hooks/useApiMutation';
-import { formatDate, formatTime, parseGender } from '../../utils/format';
+import { formatDate, formatTime, isAppointmentDue, parseGender } from '../../utils/format';
 
 export function ConsultationPage() {
   const { id } = useParams<{ id: string }>();
@@ -21,6 +21,13 @@ export function ConsultationPage() {
     queryKey: ['doctor-appointment', id],
     queryFn: () => doctorPortalApi.getAppointment(id!),
     enabled: !!id,
+  });
+
+  const patientId = data?.patient.id;
+  const { data: medicalHistory = [], isLoading: historyLoading } = useQuery({
+    queryKey: ['doctor-medical-history', patientId, id],
+    queryFn: () => doctorPortalApi.getMedicalHistory(patientId!, id),
+    enabled: !!patientId && !!id,
   });
 
   const startMutation = useApiMutation({
@@ -53,6 +60,19 @@ export function ConsultationPage() {
   const { appointment, patient, consultation } = data;
   const inProgress = started || !!consultation;
   const isCompleted = appointment.status === 'Completed' || appointment.status === 3;
+  const canStart = isAppointmentDue(appointment.appointmentDate, appointment.startTime);
+  const hasSavedDiagnosis = Boolean(consultation?.diagnosis?.trim());
+  const canComplete = hasSavedDiagnosis;
+
+  const handleSaveDiagnosis = () => {
+    if (!diagnosis.trim()) return;
+    diagnosisMutation.mutate(undefined);
+  };
+
+  const handleAddPrescription = () => {
+    if (!medication.trim() || !dosage.trim() || !frequency.trim() || !duration.trim()) return;
+    prescriptionMutation.mutate(undefined);
+  };
 
   return (
     <div className="max-w-4xl">
@@ -82,19 +102,77 @@ export function ConsultationPage() {
         </div>
       </div>
 
+      <div className="mb-6 rounded-xl border bg-white p-5 shadow-sm">
+        <h3 className="mb-3 font-semibold">Medical History</h3>
+        {historyLoading ? (
+          <div className="space-y-3">{[...Array(2)].map((_, i) => <div key={i} className="h-16 animate-pulse rounded-lg bg-slate-100" />)}</div>
+        ) : medicalHistory.length === 0 ? (
+          <p className="text-sm text-slate-500">No previous completed visits on record.</p>
+        ) : (
+          <div className="space-y-4">
+            {medicalHistory.map((entry) => (
+              <div key={entry.appointmentId} className="rounded-lg border border-slate-100 bg-slate-50 p-4">
+                <div className="mb-2 flex flex-wrap items-center justify-between gap-2 text-sm">
+                  <span className="font-medium text-slate-900">
+                    {formatDate(entry.appointmentDate)} · {formatTime(entry.startTime)}
+                  </span>
+                  <span className="text-slate-500">{entry.doctorName}</span>
+                </div>
+                {entry.diagnosis && (
+                  <p className="text-sm text-slate-700"><span className="font-medium">Diagnosis:</span> {entry.diagnosis}</p>
+                )}
+                {entry.notes && (
+                  <p className="mt-1 text-sm text-slate-600"><span className="font-medium">Notes:</span> {entry.notes}</p>
+                )}
+                {entry.prescriptions.length > 0 && (
+                  <ul className="mt-2 space-y-1 text-sm text-slate-600">
+                    {entry.prescriptions.map((p) => (
+                      <li key={p.id}>
+                        {p.medicationName} — {p.dosage}, {p.frequency}, {p.duration}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
       {!inProgress && !isCompleted && (
-        <button type="button" onClick={() => startMutation.mutate(undefined)} disabled={startMutation.isPending} className="mb-6 rounded-lg bg-orange-600 px-4 py-2 text-sm text-white">
-          Start Consultation
-        </button>
+        <div className="mb-6">
+          <button
+            type="button"
+            onClick={() => startMutation.mutate(undefined)}
+            disabled={startMutation.isPending || !canStart}
+            className="rounded-lg bg-orange-600 px-4 py-2 text-sm text-white disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            Start Consultation
+          </button>
+          {!canStart && (
+            <p className="mt-2 text-sm text-amber-700">
+              Consultation can start at {formatTime(appointment.startTime)} on {formatDate(appointment.appointmentDate)}.
+            </p>
+          )}
+        </div>
       )}
 
       {(inProgress || isCompleted) && (
         <div className="space-y-6">
           <div className="rounded-xl border bg-white p-5 shadow-sm">
-            <h3 className="mb-3 font-semibold">Diagnosis</h3>
-            <textarea value={diagnosis || consultation?.diagnosis || ''} onChange={(e) => setDiagnosis(e.target.value)} disabled={isCompleted} rows={3} className="w-full rounded-lg border px-3 py-2 text-sm" placeholder="Enter diagnosis..." />
+            <h3 className="mb-3 font-semibold">Diagnosis <span className="text-red-500">*</span></h3>
+            <textarea value={diagnosis || consultation?.diagnosis || ''} onChange={(e) => setDiagnosis(e.target.value)} disabled={isCompleted} rows={3} className="w-full rounded-lg border px-3 py-2 text-sm" placeholder="Enter diagnosis..." required />
             <textarea value={notes} onChange={(e) => setNotes(e.target.value)} disabled={isCompleted} rows={2} className="mt-2 w-full rounded-lg border px-3 py-2 text-sm" placeholder="Notes (optional)" />
-            {!isCompleted && <button type="button" onClick={() => diagnosisMutation.mutate(undefined)} className="mt-3 rounded-lg bg-primary-600 px-4 py-2 text-sm text-white">Save Diagnosis</button>}
+            {!isCompleted && (
+              <button
+                type="button"
+                onClick={handleSaveDiagnosis}
+                disabled={diagnosisMutation.isPending || !(diagnosis || consultation?.diagnosis)?.trim()}
+                className="mt-3 rounded-lg bg-primary-600 px-4 py-2 text-sm text-white disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                Save Diagnosis
+              </button>
+            )}
           </div>
 
           <div className="rounded-xl border bg-white p-5 shadow-sm">
@@ -110,15 +188,34 @@ export function ConsultationPage() {
                 <input value={dosage} onChange={(e) => setDosage(e.target.value)} placeholder="Dosage" className="rounded-lg border px-3 py-2 text-sm" />
                 <input value={frequency} onChange={(e) => setFrequency(e.target.value)} placeholder="Frequency" className="rounded-lg border px-3 py-2 text-sm" />
                 <input value={duration} onChange={(e) => setDuration(e.target.value)} placeholder="Duration" className="rounded-lg border px-3 py-2 text-sm" />
-                <button type="button" onClick={() => prescriptionMutation.mutate(undefined)} className="col-span-2 rounded-lg border border-primary-600 px-4 py-2 text-sm text-primary-600">Add Prescription</button>
+                <button
+                  type="button"
+                  onClick={handleAddPrescription}
+                  disabled={prescriptionMutation.isPending || !medication.trim() || !dosage.trim() || !frequency.trim() || !duration.trim()}
+                  className="col-span-2 rounded-lg border border-primary-600 px-4 py-2 text-sm text-primary-600 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  Add Prescription
+                </button>
               </div>
             )}
           </div>
 
           {!isCompleted && (
-            <button type="button" onClick={() => completeMutation.mutate(undefined)} disabled={completeMutation.isPending} className="rounded-lg bg-green-600 px-4 py-2 text-sm text-white">
-              Complete Appointment
-            </button>
+            <div>
+              <button
+                type="button"
+                onClick={() => completeMutation.mutate(undefined)}
+                disabled={completeMutation.isPending || !canComplete}
+                className="rounded-lg bg-green-600 px-4 py-2 text-sm text-white disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                Complete Appointment
+              </button>
+              {!canComplete && (
+                <p className="mt-2 text-sm text-amber-700">
+                  Save a diagnosis before completing the appointment.
+                </p>
+              )}
+            </div>
           )}
         </div>
       )}

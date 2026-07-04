@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "g:\\New folder\\HospitalSystem.API\\HospitalSystem.API.csproj": {}
+    "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.API\\HospitalSystem.API.csproj": {}
   },
   "projects": {
-    "g:\\New folder\\HospitalSystem.API\\HospitalSystem.API.csproj": {
+    "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.API\\HospitalSystem.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\New folder\\HospitalSystem.API\\HospitalSystem.API.csproj",
+        "projectUniqueName": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.API\\HospitalSystem.API.csproj",
         "projectName": "HospitalSystem.API",
-        "projectPath": "g:\\New folder\\HospitalSystem.API\\HospitalSystem.API.csproj",
-        "packagesPath": "C:\\Users\\hazem\\AppData\\Local\\Temp\\cursor-sandbox-cache\\76b4e4c5cf7b2525bc01a685630bf74a\\nuget",
-        "outputPath": "g:\\New folder\\HospitalSystem.API\\obj\\",
+        "projectPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.API\\HospitalSystem.API.csproj",
+        "packagesPath": "C:\\Users\\i - seven\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hazem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\i - seven\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,17 +26,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "g:\\New folder\\HospitalSystem.Application\\HospitalSystem.Application.csproj": {
-                "projectPath": "g:\\New folder\\HospitalSystem.Application\\HospitalSystem.Application.csproj"
+              "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\HospitalSystem.Application.csproj": {
+                "projectPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\HospitalSystem.Application.csproj"
               },
-              "g:\\New folder\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj": {
-                "projectPath": "g:\\New folder\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj"
+              "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj"
               }
             }
           }
@@ -55,6 +57,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "FluentValidation.AspNetCore": {
@@ -107,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -525,20 +528,20 @@
         }
       }
     },
-    "g:\\New folder\\HospitalSystem.Application\\HospitalSystem.Application.csproj": {
+    "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\HospitalSystem.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\New folder\\HospitalSystem.Application\\HospitalSystem.Application.csproj",
+        "projectUniqueName": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\HospitalSystem.Application.csproj",
         "projectName": "HospitalSystem.Application",
-        "projectPath": "g:\\New folder\\HospitalSystem.Application\\HospitalSystem.Application.csproj",
-        "packagesPath": "C:\\Users\\hazem\\AppData\\Local\\Temp\\cursor-sandbox-cache\\76b4e4c5cf7b2525bc01a685630bf74a\\nuget",
-        "outputPath": "g:\\New folder\\HospitalSystem.Application\\obj\\",
+        "projectPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\HospitalSystem.Application.csproj",
+        "packagesPath": "C:\\Users\\i - seven\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hazem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\i - seven\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -547,14 +550,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "g:\\New folder\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj": {
-                "projectPath": "g:\\New folder\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj"
+              "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj"
               }
             }
           }
@@ -573,6 +578,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "FluentValidation": {
@@ -604,7 +610,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -882,20 +888,20 @@
         }
       }
     },
-    "g:\\New folder\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj": {
+    "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\New folder\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj",
         "projectName": "HospitalSystem.Domain",
-        "projectPath": "g:\\New folder\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj",
-        "packagesPath": "C:\\Users\\hazem\\AppData\\Local\\Temp\\cursor-sandbox-cache\\76b4e4c5cf7b2525bc01a685630bf74a\\nuget",
-        "outputPath": "g:\\New folder\\HospitalSystem.Domain\\obj\\",
+        "projectPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Domain\\HospitalSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\i - seven\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hazem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\i - seven\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -904,10 +910,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -926,6 +934,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -943,7 +952,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1221,20 +1230,20 @@
         }
       }
     },
-    "g:\\New folder\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj": {
+    "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\New folder\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj",
         "projectName": "HospitalSystem.Infrastructure",
-        "projectPath": "g:\\New folder\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\hazem\\AppData\\Local\\Temp\\cursor-sandbox-cache\\76b4e4c5cf7b2525bc01a685630bf74a\\nuget",
-        "outputPath": "g:\\New folder\\HospitalSystem.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\i - seven\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hazem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\i - seven\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1243,14 +1252,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "g:\\New folder\\HospitalSystem.Application\\HospitalSystem.Application.csproj": {
-                "projectPath": "g:\\New folder\\HospitalSystem.Application\\HospitalSystem.Application.csproj"
+              "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\HospitalSystem.Application.csproj": {
+                "projectPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\HospitalSystem.Application.csproj"
               }
             }
           }
@@ -1269,6 +1280,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "BCrypt.Net-Next": {
@@ -1304,7 +1316,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

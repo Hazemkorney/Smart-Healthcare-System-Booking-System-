@@ -13,3 +13,35 @@ G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Applic
 G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\refint\HospitalSystem.Application.dll
 G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.pdb
 G:\New folder\HospitalSystem.Application\obj\Debug\net10.0\ref\HospitalSystem.Application.dll
+G:\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.deps.json
+G:\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.dll
+G:\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.pdb
+G:\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Domain.dll
+G:\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.csproj.AssemblyReference.cache
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.AssemblyInfoInputs.cache
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.AssemblyInfo.cs
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.csproj.CoreCompileInputs.cache
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.sourcelink.json
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\Hospital.CA47ADE6.Up2Date
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.dll
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\refint\HospitalSystem.Application.dll
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.pdb
+G:\DEPI\HospitalSystem.Application\obj\Debug\net10.0\ref\HospitalSystem.Application.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.deps.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Application.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Domain.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.csproj.AssemblyReference.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.AssemblyInfoInputs.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.AssemblyInfo.cs
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.sourcelink.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\Hospital.CA47ADE6.Up2Date
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\refint\HospitalSystem.Application.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\HospitalSystem.Application.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Application\obj\Debug\net10.0\ref\HospitalSystem.Application.dll

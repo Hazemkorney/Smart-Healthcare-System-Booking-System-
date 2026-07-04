@@ -54,7 +54,9 @@ public class DepartmentService : IDepartmentService
         int pageSize = 10,
         CancellationToken cancellationToken = default)
     {
-        var departments = await _unitOfWork.Departments.GetAllAsync(cancellationToken);
+        var departments = (await _unitOfWork.Departments.GetAllAsync(cancellationToken))
+            .Where(d => d.IsActive)
+            .ToList();
         return Pagination.Create(departments.Select(Map), page, pageSize);
     }
 

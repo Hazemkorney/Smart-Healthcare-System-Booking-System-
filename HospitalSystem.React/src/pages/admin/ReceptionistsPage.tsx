@@ -11,15 +11,22 @@ import { Modal } from '../../components/Modal';
 import { ConfirmDialog } from '../../components/ConfirmDialog';
 import { useApiMutation } from '../../hooks/useApiMutation';
 import type { Receptionist } from '../../types';
+import { optionalPhoneNumberSchema } from '../../utils/validation';
 
-const schema = z.object({
-  email: z.string().email(),
+const createSchema = z.object({
+  email: z.string().email('Valid email required'),
   password: z.string().min(6).optional().or(z.literal('')),
-  fullName: z.string().min(1),
-  phone: z.string().optional(),
+  fullName: z.string().min(1, 'Full name required'),
+  phone: optionalPhoneNumberSchema,
 });
 
-type FormData = z.infer<typeof schema>;
+const editSchema = z.object({
+  fullName: z.string().min(1, 'Full name required'),
+  phone: optionalPhoneNumberSchema,
+});
+
+type CreateFormData = z.infer<typeof createSchema>;
+type EditFormData = z.infer<typeof editSchema>;
 
 export function ReceptionistsPage() {
   const [page, setPage] = useState(1);
@@ -32,7 +39,10 @@ export function ReceptionistsPage() {
     queryKey: ['receptionists', page, pageSize],
     queryFn: () => receptionistApi.getAll(page, pageSize),
   });
-  const form = useForm<FormData>({ resolver: zodResolver(schema) });
+  const form = useForm<CreateFormData | EditFormData>({
+    resolver: async (values, context, options) =>
+      zodResolver(editing ? editSchema : createSchema)(values, context, options),
+  });
 
   const createMutation = useApiMutation({
     mutationFn: receptionistApi.create,
@@ -64,7 +74,7 @@ export function ReceptionistsPage() {
         header: 'Actions',
         render: (r) => (
           <div className="flex gap-2">
-            <button type="button" onClick={() => { setEditing(r); form.reset({ fullName: r.fullName, phone: r.phone ?? '', email: '', password: '' }); setModalOpen(true); }} className="text-primary-600"><Pencil className="h-4 w-4" /></button>
+            <button type="button" onClick={() => { setEditing(r); form.reset({ fullName: r.fullName, phone: r.phone ?? '' }); setModalOpen(true); }} className="text-primary-600"><Pencil className="h-4 w-4" /></button>
             <button type="button" onClick={() => setDeleteTarget(r)} className="text-red-600"><Trash2 className="h-4 w-4" /></button>
           </div>
         ),
@@ -73,9 +83,13 @@ export function ReceptionistsPage() {
     [form],
   );
 
-  const onSubmit = (values: FormData) => {
-    if (editing) updateMutation.mutate({ id: editing.id, data: { fullName: values.fullName, phone: values.phone } });
-    else createMutation.mutate({ ...values, password: values.password || 'Reception@123' });
+  const onSubmit = (values: CreateFormData | EditFormData) => {
+    if (editing) {
+      updateMutation.mutate({ id: editing.id, data: { fullName: values.fullName, phone: values.phone } });
+    } else {
+      const data = values as CreateFormData;
+      createMutation.mutate({ ...data, password: data.password || 'Reception@123' });
+    }
   };
 
   return (
@@ -106,7 +120,7 @@ export function ReceptionistsPage() {
             </>
           )}
           <div><label className="text-sm font-medium">Full Name</label><input {...form.register('fullName')} className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" /></div>
-          <div><label className="text-sm font-medium">Phone</label><input {...form.register('phone')} className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" /></div>
+          <div><label className="text-sm font-medium">Phone</label><input {...form.register('phone')} type="tel" placeholder="01xxxxxxxxx" className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" />{form.formState.errors.phone && <p className="mt-1 text-xs text-red-600">{form.formState.errors.phone.message}</p>}</div>
           <div className="flex justify-end gap-3">
             <button type="button" onClick={() => setModalOpen(false)} className="rounded-lg border px-4 py-2 text-sm">Cancel</button>
             <button type="submit" className="rounded-lg bg-primary-600 px-4 py-2 text-sm text-white">Save</button>

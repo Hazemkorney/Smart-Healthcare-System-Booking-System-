@@ -22,7 +22,12 @@ public interface IAppointmentService
     Task<AppointmentResponse> RescheduleAsync(Guid appointmentId, RescheduleRequest request, Guid receptionistId, CancellationToken cancellationToken = default);
     Task CancelAsync(Guid appointmentId, Guid receptionistId, CancellationToken cancellationToken = default);
     Task<AppointmentResponse> CheckInAsync(Guid appointmentId, CancellationToken cancellationToken = default);
-    Task<IReadOnlyList<AvailableSlotResponse>> GetAvailableSlotsAsync(Guid doctorId, DateOnly date, CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<AvailableSlotResponse>> GetAvailableSlotsAsync(
+        Guid doctorId,
+        DateOnly date,
+        Guid patientId,
+        Guid? excludeAppointmentId = null,
+        CancellationToken cancellationToken = default);
     Task<IReadOnlyList<AppointmentResponse>> GetDoctorScheduleAsync(Guid doctorId, DateOnly date, CancellationToken cancellationToken = default);
     Task<AppointmentResponse> GetByIdAsync(Guid appointmentId, CancellationToken cancellationToken = default);
     Task<IReadOnlyList<AppointmentResponse>> GetByPatientIdAsync(Guid patientId, CancellationToken cancellationToken = default);
@@ -39,6 +44,44 @@ public interface IDoctorService
     Task AssignToDepartmentAsync(Guid doctorId, Guid departmentId, CancellationToken cancellationToken = default);
     Task SetScheduleAsync(Guid doctorId, SetDoctorScheduleRequest request, CancellationToken cancellationToken = default);
     Task<IReadOnlyList<DoctorScheduleResponse>> GetSchedulesAsync(Guid doctorId, CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<DoctorScheduleResponse>> GetDefaultScheduleAsync(CancellationToken cancellationToken = default);
+    Task SetDefaultScheduleAsync(SetDoctorScheduleRequest request, CancellationToken cancellationToken = default);
+    Task ApplyDefaultScheduleToAllDoctorsAsync(CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<DoctorDateScheduleResponse>> GetDefaultDateSchedulesAsync(
+        DateOnly? from = null,
+        DateOnly? to = null,
+        CancellationToken cancellationToken = default);
+    Task<DoctorDateScheduleResponse> SetDefaultDateScheduleAsync(
+        SetDoctorDateScheduleRequest request,
+        CancellationToken cancellationToken = default);
+    Task RemoveDefaultDateScheduleAsync(DateOnly date, CancellationToken cancellationToken = default);
+    Task ApplyDefaultDateSchedulesToAllDoctorsAsync(
+        DateOnly from,
+        DateOnly to,
+        CancellationToken cancellationToken = default);
+    Task ApplySelectedDefaultDateSchedulesToAllDoctorsAsync(
+        IReadOnlyList<DateOnly> dates,
+        CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<DoctorDateScheduleResponse>> GetAppliedDateSchedulesAsync(
+        CancellationToken cancellationToken = default);
+    Task<DoctorDateScheduleResponse> ApplyDateScheduleToAllDoctorsAsync(
+        SetDoctorDateScheduleRequest request,
+        CancellationToken cancellationToken = default);
+    Task RemoveDateScheduleFromAllDoctorsAsync(DateOnly date, CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<DoctorDateScheduleResponse>> GetDateSchedulesAsync(
+        Guid doctorId,
+        DateOnly? from = null,
+        DateOnly? to = null,
+        CancellationToken cancellationToken = default);
+    Task<DoctorDateScheduleResponse> SetDateScheduleAsync(
+        Guid doctorId,
+        SetDoctorDateScheduleRequest request,
+        CancellationToken cancellationToken = default);
+    Task RemoveDateScheduleAsync(Guid doctorId, DateOnly date, CancellationToken cancellationToken = default);
+    Task<DoctorDateScheduleResponse?> GetDateScheduleForDateAsync(
+        Guid doctorId,
+        DateOnly date,
+        CancellationToken cancellationToken = default);
     Task<DoctorResponse> GetByUserIdAsync(Guid userId, CancellationToken cancellationToken = default);
 }
 
@@ -67,6 +110,14 @@ public interface IConsultationService
     Task<ConsultationResponse> AddPrescriptionAsync(Guid appointmentId, Guid doctorId, CreatePrescriptionRequest request, CancellationToken cancellationToken = default);
     Task<ConsultationResponse> CompleteAsync(Guid appointmentId, Guid doctorId, CancellationToken cancellationToken = default);
     Task<ConsultationResponse?> GetByAppointmentIdAsync(Guid appointmentId, CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<PatientMedicalHistoryEntry>> GetPatientMedicalHistoryAsync(
+        Guid doctorId,
+        Guid patientId,
+        Guid? excludeAppointmentId = null,
+        CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<PatientMedicalHistoryEntry>> GetOwnMedicalHistoryAsync(
+        Guid patientId,
+        CancellationToken cancellationToken = default);
 }
 
 public interface IReceptionistService

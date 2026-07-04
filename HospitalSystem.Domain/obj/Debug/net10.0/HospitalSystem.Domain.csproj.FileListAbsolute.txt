@@ -9,3 +9,27 @@ G:\New folder\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.dll
 G:\New folder\HospitalSystem.Domain\obj\Debug\net10.0\refint\HospitalSystem.Domain.dll
 G:\New folder\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.pdb
 G:\New folder\HospitalSystem.Domain\obj\Debug\net10.0\ref\HospitalSystem.Domain.dll
+G:\DEPI\HospitalSystem.Domain\bin\Debug\net10.0\HospitalSystem.Domain.deps.json
+G:\DEPI\HospitalSystem.Domain\bin\Debug\net10.0\HospitalSystem.Domain.dll
+G:\DEPI\HospitalSystem.Domain\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.AssemblyInfoInputs.cache
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.AssemblyInfo.cs
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.csproj.CoreCompileInputs.cache
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.sourcelink.json
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.dll
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\refint\HospitalSystem.Domain.dll
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.pdb
+G:\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\ref\HospitalSystem.Domain.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\bin\Debug\net10.0\HospitalSystem.Domain.deps.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\bin\Debug\net10.0\HospitalSystem.Domain.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.AssemblyInfo.cs
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.sourcelink.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\refint\HospitalSystem.Domain.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\HospitalSystem.Domain.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.Domain\obj\Debug\net10.0\ref\HospitalSystem.Domain.dll

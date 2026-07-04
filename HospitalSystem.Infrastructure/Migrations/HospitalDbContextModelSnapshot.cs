@@ -207,6 +207,96 @@ namespace HospitalSystem.Infrastructure.Migrations
                     b.ToTable("DoctorSchedules", (string)null);
                 });
 
+            modelBuilder.Entity("HospitalSystem.Domain.Entities.DefaultDoctorSchedule", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AppointmentDurationMinutes")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DayOfWeek")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DayOfWeek")
+                        .IsUnique();
+
+                    b.ToTable("DefaultDoctorSchedules", (string)null);
+                });
+
+            modelBuilder.Entity("HospitalSystem.Domain.Entities.DefaultDoctorDateSchedule", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AppointmentDurationMinutes")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<DateOnly>("ScheduleDate")
+                        .HasColumnType("date");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ScheduleDate")
+                        .IsUnique();
+
+                    b.ToTable("DefaultDoctorDateSchedules", (string)null);
+                });
+
+            modelBuilder.Entity("HospitalSystem.Domain.Entities.DoctorDateSchedule", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AppointmentDurationMinutes")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("DoctorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<DateOnly>("ScheduleDate")
+                        .HasColumnType("date");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DoctorId", "ScheduleDate")
+                        .IsUnique();
+
+                    b.ToTable("DoctorDateSchedules", (string)null);
+                });
+
             modelBuilder.Entity("HospitalSystem.Domain.Entities.Patient", b =>
                 {
                     b.Property<Guid>("Id")
@@ -442,6 +532,17 @@ namespace HospitalSystem.Infrastructure.Migrations
                 {
                     b.HasOne("HospitalSystem.Domain.Entities.Doctor", "Doctor")
                         .WithMany("Schedules")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Doctor");
+                });
+
+            modelBuilder.Entity("HospitalSystem.Domain.Entities.DoctorDateSchedule", b =>
+                {
+                    b.HasOne("HospitalSystem.Domain.Entities.Doctor", "Doctor")
+                        .WithMany()
                         .HasForeignKey("DoctorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
