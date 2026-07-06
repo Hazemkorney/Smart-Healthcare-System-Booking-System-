@@ -153,33 +153,38 @@ export function DoctorsPage() {
           {!editing && (
             <>
               <div className="col-span-2">
-                <label className="mb-1 block text-sm font-medium">Email</label>
-                <input {...form.register('email')} type="email" className="w-full rounded-lg border px-3 py-2 text-sm" />
+                <label className={`mb-1 block text-sm font-medium ${form.formState.errors.email ? 'text-red-600' : ''}`}>Email</label>
+                <input {...form.register('email')} type="email" className={`w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.email ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} />
+                {form.formState.errors.email && <p className="mt-1 text-xs text-red-600">{form.formState.errors.email.message}</p>}
               </div>
               <div className="col-span-2">
-                <label className="mb-1 block text-sm font-medium">Password</label>
-                <input {...form.register('password')} type="password" className="w-full rounded-lg border px-3 py-2 text-sm" placeholder="Doctor@123" />
+                <label className={`mb-1 block text-sm font-medium ${form.formState.errors.password ? 'text-red-600' : ''}`}>Password</label>
+                <input {...form.register('password')} type="password" className={`w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.password ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} placeholder="Doctor@123" />
+                {form.formState.errors.password && <p className="mt-1 text-xs text-red-600">{form.formState.errors.password.message}</p>}
               </div>
             </>
           )}
           <div>
-            <label className="mb-1 block text-sm font-medium">Full Name</label>
-            <input {...form.register('fullName')} className="w-full rounded-lg border px-3 py-2 text-sm" />
+            <label className={`mb-1 block text-sm font-medium ${form.formState.errors.fullName ? 'text-red-600' : ''}`}>Full Name</label>
+            <input {...form.register('fullName')} className={`w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.fullName ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} />
+            {form.formState.errors.fullName && <p className="mt-1 text-xs text-red-600">{form.formState.errors.fullName.message}</p>}
           </div>
           <div>
-            <label className="mb-1 block text-sm font-medium">Specialization</label>
-            <input {...form.register('specialization')} className="w-full rounded-lg border px-3 py-2 text-sm" />
+            <label className={`mb-1 block text-sm font-medium ${form.formState.errors.specialization ? 'text-red-600' : ''}`}>Specialization</label>
+            <input {...form.register('specialization')} className={`w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.specialization ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} />
+            {form.formState.errors.specialization && <p className="mt-1 text-xs text-red-600">{form.formState.errors.specialization.message}</p>}
           </div>
           <div>
-            <label className="mb-1 block text-sm font-medium">Department</label>
-            <select {...form.register('departmentId')} className="w-full rounded-lg border px-3 py-2 text-sm">
+            <label className={`mb-1 block text-sm font-medium ${form.formState.errors.departmentId ? 'text-red-600' : ''}`}>Department</label>
+            <select {...form.register('departmentId')} className={`w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.departmentId ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`}>
               <option value="">Select...</option>
               {departments.map((d) => <option key={d.id} value={d.id}>{d.name}</option>)}
             </select>
+            {form.formState.errors.departmentId && <p className="mt-1 text-xs text-red-600">{form.formState.errors.departmentId.message}</p>}
           </div>
           <div>
-            <label className="mb-1 block text-sm font-medium">Phone</label>
-            <input {...form.register('phone')} type="tel" placeholder="01xxxxxxxxx" className="w-full rounded-lg border px-3 py-2 text-sm" />
+            <label className={`mb-1 block text-sm font-medium ${form.formState.errors.phone ? 'text-red-600' : ''}`}>Phone</label>
+            <input {...form.register('phone')} type="tel" placeholder="01xxxxxxxxx" className={`w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.phone ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} />
             {form.formState.errors.phone && <p className="mt-1 text-xs text-red-600">{form.formState.errors.phone.message}</p>}
           </div>
           <div className="col-span-2 flex justify-end gap-3">
