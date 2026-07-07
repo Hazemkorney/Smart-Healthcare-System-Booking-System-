@@ -1,0 +1,558 @@
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\appsettings.Development.json
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\appsettings.json
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.staticwebassets.endpoints.json
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.exe
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.deps.json
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.runtimeconfig.json
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.pdb
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Application.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Domain.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Infrastructure.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Application.pdb
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.csproj.AssemblyReference.cache
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.GeneratedMSBuildEditorConfig.editorconfig
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.AssemblyInfoInputs.cache
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.AssemblyInfo.cs
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.csproj.CoreCompileInputs.cache
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.MvcApplicationPartsAssemblyInfo.cs
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.MvcApplicationPartsAssemblyInfo.cache
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\scopedcss\bundle\HospitalSystem.API.styles.css
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.json
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.json.cache
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.development.json
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\swae.build.ex.cache
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\Hospital.050C1DB2.Up2Date
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.dll
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\refint\HospitalSystem.API.dll
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.pdb
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.genruntimeconfig.cache
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\ref\HospitalSystem.API.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Azure.Core.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Azure.Identity.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\BCrypt-Net-Next.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Humanizer.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Identity.Client.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Mono.TextTemplating.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Newtonsoft.Json.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.ClientModel.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.CodeDom.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Convention.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Hosting.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Runtime.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.Composition.TypedParts.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.Memory.Data.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.InMemory.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\appsettings.Production.json
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.xml
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.AspNetCore.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.Extensions.Hosting.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.Extensions.Logging.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.Formatting.Compact.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.Settings.Configuration.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.Console.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.Debug.dll
+G:\New folder\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.File.dll
+G:\New folder\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.xml
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\appsettings.Development.json
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\appsettings.json
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\appsettings.Production.json
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.staticwebassets.endpoints.json
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.exe
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.deps.json
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.runtimeconfig.json
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.pdb
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.xml
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Azure.Core.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Azure.Identity.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\BCrypt-Net-Next.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Humanizer.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.InMemory.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Identity.Client.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Mono.TextTemplating.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Newtonsoft.Json.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.AspNetCore.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Extensions.Hosting.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Extensions.Logging.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Formatting.Compact.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Settings.Configuration.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.Console.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.Debug.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.File.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.ClientModel.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.CodeDom.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Convention.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Hosting.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Runtime.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.TypedParts.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Memory.Data.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Application.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Domain.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Infrastructure.dll
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Application.pdb
+G:\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.csproj.AssemblyReference.cache
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.GeneratedMSBuildEditorConfig.editorconfig
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.AssemblyInfoInputs.cache
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.AssemblyInfo.cs
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.csproj.CoreCompileInputs.cache
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.MvcApplicationPartsAssemblyInfo.cs
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.MvcApplicationPartsAssemblyInfo.cache
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.sourcelink.json
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\scopedcss\bundle\HospitalSystem.API.styles.css
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.json
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.json.cache
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.development.json
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\swae.build.ex.cache
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\Hospital.050C1DB2.Up2Date
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.dll
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\refint\HospitalSystem.API.dll
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.xml
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.pdb
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.genruntimeconfig.cache
+G:\DEPI\HospitalSystem.API\obj\Debug\net10.0\ref\HospitalSystem.API.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\appsettings.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\appsettings.Production.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.staticwebassets.endpoints.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.exe
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.deps.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.runtimeconfig.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.API.xml
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Azure.Core.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Azure.Identity.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\BCrypt-Net-Next.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Humanizer.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Identity.Client.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Mono.TextTemplating.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.AspNetCore.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Extensions.Hosting.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Extensions.Logging.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Formatting.Compact.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Settings.Configuration.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.Console.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.Debug.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Serilog.Sinks.File.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.ClientModel.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.CodeDom.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Convention.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Hosting.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.Runtime.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Composition.TypedParts.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Memory.Data.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Application.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Domain.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Infrastructure.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Infrastructure.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Application.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\bin\Debug\net10.0\HospitalSystem.Domain.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.csproj.AssemblyReference.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.AssemblyInfoInputs.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.AssemblyInfo.cs
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.csproj.CoreCompileInputs.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.sourcelink.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\scopedcss\bundle\HospitalSystem.API.styles.css
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\Hospital.050C1DB2.Up2Date
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\refint\HospitalSystem.API.dll
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.xml
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.pdb
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\HospitalSystem.API.genruntimeconfig.cache
+C:\Users\i - seven\Desktop\DEPI (4)\DEPI\HospitalSystem.API\obj\Debug\net10.0\ref\HospitalSystem.API.dll
