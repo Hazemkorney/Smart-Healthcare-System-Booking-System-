@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SmartHealthcareSystem.API/SmartHealthcareSystem.API.csproj" Id="494af0f0-a44e-4bf1-8f00-0279783b4def" />
+  <Project Path="SmartHealthcareSystem.Application/SmartHealthcareSystem.Application.csproj" Id="40d07c0e-50ac-4ba1-9680-51e547e4e188" />
+  <Project Path="SmartHealthcareSystem.Domain/SmartHealthcareSystem.Domain.csproj" Id="97410d02-86ea-4434-b635-264189271054" />
+  <Project Path="SmartHealthcareSystem.Infrastructure/SmartHealthcareSystem.Infrastructure.csproj" Id="bb83c390-dbfb-473b-a460-64f6cb46ba18" />
+</Solution>

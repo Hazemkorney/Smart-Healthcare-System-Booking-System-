@@ -1,43 +1,17 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace HospitalSystem.Application.DTOs.Doctors;
 
 public record CreateDoctorRequest(
-[Required(ErrorMessage = "Email is required.")]
-    [EmailAddress(ErrorMessage = "Invalid email format.")]
     string Email,
-
-    [Required(ErrorMessage = "Password is required.")]
     string Password,
-
-    [Required(ErrorMessage = "DepartmentId is required.")]
     Guid DepartmentId,
-
-    [Required(ErrorMessage = "Full Name is required.")]
-    [RegularExpression(@"^[\u0600-\u06FFa-zA-Z\s]+$", ErrorMessage = "Full Name cannot contain numbers or special characters.")]
-    [StringLength(100, ErrorMessage = "Full Name cannot exceed 100 characters.")]
     string FullName,
-
-    [Required(ErrorMessage = "Specialization is required.")]
-    [RegularExpression(@"^[\u0600-\u06FFa-zA-Z\s]+$", ErrorMessage = "Specialization cannot contain numbers or special characters.")]
-    [StringLength(100, ErrorMessage = "Specialization cannot exceed 100 characters.")]
     string Specialization,
-
-    [RegularExpression(@"^01[0125][0-9]{8}$", ErrorMessage = "Phone number must be exactly 11 digits and start with 010, 011, 012, or 015.")]
     string? Phone);
-public record UpdateDoctorRequest(
-       [Required(ErrorMessage = "DepartmentId is required.")]
-    Guid DepartmentId,
-        [Required(ErrorMessage = "Full Name is required.")]
-    [RegularExpression(@"^[\u0600-\u06FFa-zA-Z\s]+$", ErrorMessage = "Full Name cannot contain numbers or special characters.")]
-    [StringLength(100, ErrorMessage = "Full Name cannot exceed 100 characters.")]
-    string FullName,
-         [Required(ErrorMessage = "Specialization is required.")]
-    [RegularExpression(@"^[\u0600-\u06FFa-zA-Z\s]+$", ErrorMessage = "Specialization cannot contain numbers or special characters.")]
-    [StringLength(100, ErrorMessage = "Specialization cannot exceed 100 characters.")]
-    string Specialization,
 
-   [RegularExpression(@"^01[0125][0-9]{8}$", ErrorMessage = "Phone number must be exactly 11 digits and start with 010, 011, 012, or 015.")]
+public record UpdateDoctorRequest(
+    Guid DepartmentId,
+    string FullName,
+    string Specialization,
     string? Phone);
 
 public record DoctorResponse(
