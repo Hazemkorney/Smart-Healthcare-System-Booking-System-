@@ -5,7 +5,7 @@ import { doctorPortalApi } from '../../api';
 import { StatusBadge } from '../../components/StatusBadge';
 import { useApiMutation } from '../../hooks/useApiMutation';
 import { formatDate, formatTime, isAppointmentDue, parseGender } from '../../utils/format';
-import CreateDoctorForm from '../../components/CreateDoctorForm';
+
 export function ConsultationPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -219,15 +219,6 @@ export function ConsultationPage() {
           )}
         </div>
       )}
-    </div>
-  );
-}
-
-export default function CreateDoctorPage() {
-  return (
-    <div>
-      <h2>Add New Doctor</h2>
-      <CreateDoctorForm />
     </div>
   );
 }

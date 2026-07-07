@@ -11,22 +11,29 @@ import { Modal } from '../../components/Modal';
 import { ConfirmDialog } from '../../components/ConfirmDialog';
 import { useApiMutation } from '../../hooks/useApiMutation';
 import type { Receptionist } from '../../types';
-import { optionalPhoneNumberSchema } from '../../utils/validation';
+import { optionalPhoneNumberSchema, NAME_REGEX } from '../../utils/validation';
 
 const createSchema = z.object({
   email: z.string().email('Valid email required'),
   password: z.string().min(6).optional().or(z.literal('')),
-  fullName: z.string().min(1, 'Full name required'),
+  fullName: z.string().min(1, 'Full name required').regex(NAME_REGEX, 'Full Name cannot contain numbers or special characters.').max(100, 'Full Name cannot exceed 100 characters'),
   phone: optionalPhoneNumberSchema,
 });
 
 const editSchema = z.object({
-  fullName: z.string().min(1, 'Full name required'),
+  fullName: z.string().min(1, 'Full name required').regex(NAME_REGEX, 'Full Name cannot contain numbers or special characters.').max(100, 'Full Name cannot exceed 100 characters'),
   phone: optionalPhoneNumberSchema,
 });
 
-type CreateFormData = z.infer<typeof createSchema>;
-type EditFormData = z.infer<typeof editSchema>;
+// type CreateFormData = z.infer<typeof createSchema>;
+// type EditFormData = z.infer<typeof editSchema>;
+
+type FormValues = {
+  email?: string;
+  password?: string;
+  fullName: string;
+  phone?: string;
+};
 
 export function ReceptionistsPage() {
   const [page, setPage] = useState(1);
@@ -39,9 +46,10 @@ export function ReceptionistsPage() {
     queryKey: ['receptionists', page, pageSize],
     queryFn: () => receptionistApi.getAll(page, pageSize),
   });
-  const form = useForm<CreateFormData | EditFormData>({
+  const form = useForm<FormValues>({
     resolver: async (values, context, options) =>
       zodResolver(editing ? editSchema : createSchema)(values, context, options),
+    mode: 'onChange',
   });
 
   const createMutation = useApiMutation({
@@ -55,7 +63,7 @@ export function ReceptionistsPage() {
     mutationFn: ({ id, data }: { id: string; data: Record<string, unknown> }) => receptionistApi.update(id, data),
     successMessage: 'Receptionist updated',
     invalidateKeys: [['receptionists']],
-    onSuccess: () => { setModalOpen(false); setEditing(null); },
+    onSuccess: () => { setModalOpen(false); setEditing(null); form.reset(); },
   });
 
   const deleteMutation = useApiMutation({
@@ -83,12 +91,11 @@ export function ReceptionistsPage() {
     [form],
   );
 
-  const onSubmit = (values: CreateFormData | EditFormData) => {
+  const onSubmit = (values: FormValues) => {
     if (editing) {
       updateMutation.mutate({ id: editing.id, data: { fullName: values.fullName, phone: values.phone } });
     } else {
-      const data = values as CreateFormData;
-      createMutation.mutate({ ...data, password: data.password || 'Reception@123' });
+      createMutation.mutate({ email: values.email, fullName: values.fullName, phone: values.phone, password: values.password || 'Reception@123' });
     }
   };
 
@@ -115,12 +122,28 @@ export function ReceptionistsPage() {
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           {!editing && (
             <>
-              <div><label className={`text-sm font-medium ${form.formState.errors.email ? 'text-red-600' : ''}`}>Email</label><input {...form.register('email')} type="email" className={`mt-1 w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.email ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} />{form.formState.errors.email && <p className="mt-1 text-xs text-red-600">{form.formState.errors.email.message}</p>}</div>
-              <div><label className={`text-sm font-medium ${form.formState.errors.password ? 'text-red-600' : ''}`}>Password</label><input {...form.register('password')} type="password" className={`mt-1 w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.password ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} placeholder="Reception@123" />{form.formState.errors.password && <p className="mt-1 text-xs text-red-600">{form.formState.errors.password.message}</p>}</div>
+              <div>
+                <label className="text-sm font-medium">Email</label>
+                <input {...form.register('email')} type="email" className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" />
+                {form.formState.errors.email && <p className="mt-1 text-xs text-red-600">{form.formState.errors.email.message}</p>}
+              </div>
+              <div>
+                <label className="text-sm font-medium">Password</label>
+                <input {...form.register('password')} type="password" className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" placeholder="Reception@123" />
+                {form.formState.errors.password && <p className="mt-1 text-xs text-red-600">{form.formState.errors.password.message}</p>}
+              </div>
             </>
           )}
-          <div><label className={`text-sm font-medium ${form.formState.errors.fullName ? 'text-red-600' : ''}`}>Full Name</label><input {...form.register('fullName')} className={`mt-1 w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.fullName ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} />{form.formState.errors.fullName && <p className="mt-1 text-xs text-red-600">{form.formState.errors.fullName.message}</p>}</div>
-          <div><label className={`text-sm font-medium ${form.formState.errors.phone ? 'text-red-600' : ''}`}>Phone</label><input {...form.register('phone')} type="tel" placeholder="01xxxxxxxxx" className={`mt-1 w-full rounded-lg border px-3 py-2 text-sm ${form.formState.errors.phone ? 'border-red-600 focus:border-red-600 focus:ring-red-600' : ''}`} />{form.formState.errors.phone && <p className="mt-1 text-xs text-red-600">{form.formState.errors.phone.message}</p>}</div>
+          <div>
+            <label className="text-sm font-medium">Full Name</label>
+            <input {...form.register('fullName')} className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" />
+            {form.formState.errors.fullName && <p className="mt-1 text-xs text-red-600">{form.formState.errors.fullName.message}</p>}
+          </div>
+          <div>
+            <label className="text-sm font-medium">Phone</label>
+            <input {...form.register('phone')} type="tel" placeholder="01xxxxxxxxx" className="mt-1 w-full rounded-lg border px-3 py-2 text-sm" />
+            {form.formState.errors.phone && <p className="mt-1 text-xs text-red-600">{form.formState.errors.phone.message}</p>}
+          </div>
           <div className="flex justify-end gap-3">
             <button type="button" onClick={() => setModalOpen(false)} className="rounded-lg border px-4 py-2 text-sm">Cancel</button>
             <button type="submit" className="rounded-lg bg-primary-600 px-4 py-2 text-sm text-white">Save</button>

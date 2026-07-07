@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import { NAME_REGEX } from '../../utils/validation';
 import { Plus, Pencil, Trash2 } from 'lucide-react';
 import { departmentApi } from '../../api';
 import { DataTable, type Column } from '../../components/DataTable';
@@ -13,8 +14,19 @@ import { useApiMutation } from '../../hooks/useApiMutation';
 import type { Department } from '../../types';
 
 const schema = z.object({
-  name: z.string().min(1, 'Name required'),
-  description: z.string().optional(),
+  name: z
+    .string()
+    .min(1, 'Name required')
+    .regex(
+      NAME_REGEX,
+      'Department Name cannot contain numbers or special characters.'
+    )
+    .max(100, 'Department Name cannot exceed 100 characters'),
+
+  description: z
+    .string()
+    .max(200, 'Description cannot exceed 200 characters')
+    .optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -31,7 +43,7 @@ export function DepartmentsPage() {
     queryFn: () => departmentApi.getAll(page, pageSize),
   });
 
-  const form = useForm<FormData>({ resolver: zodResolver(schema) });
+  const form = useForm<FormData>({ resolver: zodResolver(schema), mode: 'onChange' });
 
   const createMutation = useApiMutation({
     mutationFn: departmentApi.create,

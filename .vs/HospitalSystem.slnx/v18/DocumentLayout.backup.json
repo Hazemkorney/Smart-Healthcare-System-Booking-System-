@@ -3,14 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|c:\\users\\i - seven\\desktop\\depi (4)\\depi\\hospitalsystem.application\\dtos\\receptionists\\receptionistdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|solutionrelative:hospitalsystem.application\\dtos\\receptionists\\receptionistdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Patients.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|c:\\users\\i - seven\\desktop\\depi (4)\\depi\\hospitalsystem.application\\dtos\\patients\\patientdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|solutionrelative:hospitalsystem.application\\dtos\\patients\\patientdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|c:\\users\\i - seven\\desktop\\depi (4)\\depi\\hospitalsystem.application\\dtos\\doctors\\doctordtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|solutionrelative:hospitalsystem.application\\dtos\\doctors\\doctordtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|c:\\users\\i - seven\\desktop\\depi (4)\\depi\\hospitalsystem.application\\dtos\\departments\\departmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|solutionrelative:hospitalsystem.application\\dtos\\departments\\departmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Doctors.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBEE3C77-0C7A-197A-A659-CD64EEAB58E3}|HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj|c:\\users\\i - seven\\desktop\\depi (4)\\depi\\hospitalsystem.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBEE3C77-0C7A-197A-A659-CD64EEAB58E3}|HospitalSystem.Infrastructure\\HospitalSystem.Infrastructure.csproj|solutionrelative:hospitalsystem.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|c:\\users\\i - seven\\desktop\\depi (4)\\depi\\hospitalsystem.application\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364303D7-B7AB-841A-2A1B-944756B0B20B}|HospitalSystem.Application\\HospitalSystem.Application.csproj|solutionrelative:hospitalsystem.application\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74E11443-81BE-4B95-1345-9FAECC7C6B84}|HospitalSystem.API\\HospitalSystem.API.csproj|c:\\users\\i - seven\\desktop\\depi (4)\\depi\\hospitalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{74E11443-81BE-4B95-1345-9FAECC7C6B84}|HospitalSystem.API\\HospitalSystem.API.csproj|solutionrelative:hospitalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Departments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,40 +44,113 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Patients [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Patients.sql",
-              "ToolTip": "dbo.Patients [Data]",
+              "DocumentIndex": 4,
+              "Title": "dbo.Doctors.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Doctors.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Doctors.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-07-04T02:06:55.84Z",
+              "WhenOpened": "2026-07-06T15:34:51.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "HospitalSystem.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "HospitalSystem.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAACIAAABQ/////387wCgAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T02:36:16.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DoctorService.cs",
+              "DocumentMoniker": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\Services\\DoctorService.cs",
+              "RelativeDocumentMoniker": "HospitalSystem.Application\\Services\\DoctorService.cs",
+              "ToolTip": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\Services\\DoctorService.cs",
+              "RelativeToolTip": "HospitalSystem.Application\\Services\\DoctorService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAhwCAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T02:35:13.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientDtos.cs",
+              "DocumentMoniker": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\DTOs\\Patients\\PatientDtos.cs",
+              "RelativeDocumentMoniker": "HospitalSystem.Application\\DTOs\\Patients\\PatientDtos.cs",
+              "ToolTip": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\DTOs\\Patients\\PatientDtos.cs*",
+              "RelativeToolTip": "HospitalSystem.Application\\DTOs\\Patients\\PatientDtos.cs*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T17:48:52.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "dbo.Users [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Users.sql",
-              "ToolTip": "dbo.Users [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-07-04T02:05:25.668Z",
+              "Title": "ReceptionistDtos.cs",
+              "DocumentMoniker": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\DTOs\\Receptionists\\ReceptionistDtos.cs",
+              "RelativeDocumentMoniker": "HospitalSystem.Application\\DTOs\\Receptionists\\ReceptionistDtos.cs",
+              "ToolTip": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\DTOs\\Receptionists\\ReceptionistDtos.cs",
+              "RelativeToolTip": "HospitalSystem.Application\\DTOs\\Receptionists\\ReceptionistDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T17:46:30.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DoctorDtos.cs",
+              "DocumentMoniker": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\DTOs\\Doctors\\DoctorDtos.cs",
+              "RelativeDocumentMoniker": "HospitalSystem.Application\\DTOs\\Doctors\\DoctorDtos.cs",
+              "ToolTip": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\DTOs\\Doctors\\DoctorDtos.cs*",
+              "RelativeToolTip": "HospitalSystem.Application\\DTOs\\Doctors\\DoctorDtos.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T17:34:51.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentDtos.cs",
+              "DocumentMoniker": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\DTOs\\Departments\\DepartmentDtos.cs",
+              "RelativeDocumentMoniker": "HospitalSystem.Application\\DTOs\\Departments\\DepartmentDtos.cs",
+              "ToolTip": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.Application\\DTOs\\Departments\\DepartmentDtos.cs*",
+              "RelativeToolTip": "HospitalSystem.Application\\DTOs\\Departments\\DepartmentDtos.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T17:32:17.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.Departments.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Departments.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/HospitalSystemDb/True/SqlTable/dbo.Departments.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-07-04T15:17:16.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "HospitalSystem.API\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\i - seven\\Desktop\\DEPI (4)\\DEPI\\HospitalSystem.API\\Properties\\launchSettings.json",
               "RelativeToolTip": "HospitalSystem.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-02T21:07:49.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-02T21:07:49.258Z"
             }
           ]
         }

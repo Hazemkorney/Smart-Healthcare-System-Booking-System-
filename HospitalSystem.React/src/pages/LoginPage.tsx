@@ -78,7 +78,7 @@ export function LoginPage() {
           </button>
         </form>
         <p className="mt-6 text-center text-xs text-slate-400">
-          Demo: admin@hospital.com / Admin@123 · reception@hospital.com / Reception@123 ·
+          Demo: admin@hospital.com / Admin@123 · reception@hospital.com / Reception@123 · patient@hospital.com / Patient@123
         </p>
       </div>
     </div>
